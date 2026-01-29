@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textColor="@color/gold"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="32dp"/>
+
+    <TextView
+        android:id="@+id/tvAttribution"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/attribution"
+        android:textColor="@color/gold_dark"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle"
+        android:layout_marginTop="4dp"/>
+
+    <TextView
+        android:id="@+id/tvStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/status_inactive"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvAttribution" />
+
+    <Button
+        android:id="@+id/btnEnableAdmin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/gold"
+        android:text="@string/enable_admin"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/tvStatus" />
+
+    <View
+        android:id="@+id/divider1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gold_dark"
+        android:layout_marginTop="24dp"
+        app:layout_constraintTop_toBottomOf="@id/btnEnableAdmin"/>
+
+    <TextView
+        android:id="@+id/tvLockTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lock Device"
+        android:textColor="@color/gold"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/divider1"/>
+
+    <TextView
+        android:id="@+id/tvLockDesc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/description_lock"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvLockTitle"/>
+
+    <Button
+        android:id="@+id/btnLock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/lock_device"
+        android:backgroundTint="@color/dark_grey"
+        android:textColor="@color/gold"
+        app:strokeColor="@color/gold"
+        app:strokeWidth="1dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@id/tvLockDesc"/>
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gold_dark"
+        android:layout_marginTop="24dp"
+        app:layout_constraintTop_toBottomOf="@id/btnLock"/>
+
+    <TextView
+        android:id="@+id/tvMonitorTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Security Monitor"
+        android:textColor="@color/gold"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/divider2"/>
+    
+    <TextView
+        android:id="@+id/tvMonitorDesc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/description_monitor"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvMonitorTitle"/>
+
+    <TextView
+        android:id="@+id/tvFailedAttempts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Failed Password Attempts: 0"
+        android:textColor="@color/red_warning"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvMonitorDesc"/>
+
+    <View
+        android:id="@+id/divider3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gold_dark"
+        android:layout_marginTop="24dp"
+        app:layout_constraintTop_toBottomOf="@id/tvFailedAttempts"/>
+
+    <TextView
+        android:id="@+id/tvWipeTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Emergency Wipe"
+        android:textColor="@color/red_warning"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/divider3"/>
+
+    <TextView
+        android:id="@+id/tvWipeDesc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/description_wipe"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvWipeTitle"/>
+
+    <Button
+        android:id="@+id/btnWipe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/wipe_data"
+        android:backgroundTint="@color/red_warning"
+        android:textColor="@color/white"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@id/tvWipeDesc"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

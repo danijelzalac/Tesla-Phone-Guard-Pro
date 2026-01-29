@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#000000</color>
+    <color name="dark_grey">#121212</color>
+    <color name="gold">#FFD700</color>
+    <color name="gold_dark">#C5B358</color>
+    <color name="red_warning">#FF4444</color>
+    <color name="white">#FFFFFF</color>
+    <string name="admin_description">Required to perform emergency lock and wipe operations, and to monitor security attempts.</string>
+    <string name="admin_label">Tesla Guard Admin</string>
+    <string name="app_name">Tesla Phone Guard Pro</string>
+    <string name="attribution">by Danijel Zalac 2026</string>
+    <string name="description_lock">Instantly locks the device to prevent unauthorized access.</string>
+    <string name="description_monitor">Monitors failed unlock attempts to detect intruders.</string>
+    <string name="description_wipe">Performs a factory reset to protect sensitive data in emergencies. Use with caution.</string>
+    <string name="disable_admin">Disable Device Admin</string>
+    <string name="enable_admin">Enable Device Admin</string>
+    <string name="feature_failed_attempts">Failed Password Attempts: %1$d</string>
+    <string name="lock_device">Lock Device Now</string>
+    <string name="reset_counter">Reset Counter</string>
+    <string name="security_features_title">Security Features</string>
+    <string name="status_active">Status: Active</string>
+    <string name="status_inactive">Status: Inactive</string>
+    <string name="wipe_data">Wipe Data (Emergency)</string>
+    <style name="Base.Theme.TeslaPhoneGuardPro" parent="Theme.Material3.DayNight.NoActionBar">
+        
+        <item name="colorPrimary">@color/gold</item>
+        <item name="colorPrimaryVariant">@color/gold_dark</item>
+        <item name="colorOnPrimary">@color/black</item>
+        
+        <item name="android:windowBackground">@color/black</item>
+        <item name="android:textColor">@color/gold</item>
+    </style>
+    <style name="Theme.TeslaPhoneGuardPro" parent="Base.Theme.TeslaPhoneGuardPro"/>
+</resources>

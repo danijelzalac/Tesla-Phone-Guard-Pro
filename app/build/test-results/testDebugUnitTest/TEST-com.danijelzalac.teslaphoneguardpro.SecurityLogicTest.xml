@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.danijelzalac.teslaphoneguardpro.SecurityLogicTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-01-29T00:50:01.666Z" hostname="DESKTOP-PIEMRDI" time="0.005">
+  <properties/>
+  <testcase name="testUsbThreatDetection" classname="com.danijelzalac.teslaphoneguardpro.SecurityLogicTest" time="0.004"/>
+  <testcase name="testInactivityCalculation" classname="com.danijelzalac.teslaphoneguardpro.SecurityLogicTest" time="0.0"/>
+  <testcase name="testInactivityThreshold" classname="com.danijelzalac.teslaphoneguardpro.SecurityLogicTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

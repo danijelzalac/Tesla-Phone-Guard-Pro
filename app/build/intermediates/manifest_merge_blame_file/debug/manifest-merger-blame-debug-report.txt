@@ -1,0 +1,173 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.danijelzalac.teslaphoneguardpro"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="26"
+9        android:targetSdkVersion="34" />
+10
+11    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+11-->C:\Users\User\Documents\trae_projects\Tesla Phone Guard Pro\app\src\main\AndroidManifest.xml:5:5-77
+11-->C:\Users\User\Documents\trae_projects\Tesla Phone Guard Pro\app\src\main\AndroidManifest.xml:5:22-74
+12    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+12-->C:\Users\User\Documents\trae_projects\Tesla Phone Guard Pro\app\src\main\AndroidManifest.xml:6:5-81
+12-->C:\Users\User\Documents\trae_projects\Tesla Phone Guard Pro\app\src\main\AndroidManifest.xml:6:22-78
+13
+14    <permission
+14-->[androidx.core:core:1.12.0] C:\Users\User\.gradle\caches\9.0-milestone-1\transforms\96a788d4b25d8546e5bf24497a2f7085\transformed\core-1.12.0\AndroidManifest.xml:22:5-24:47
+15        android:name="com.danijelzalac.teslaphoneguardpro.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+15-->[androidx.core:core:1.12.0] C:\Users\User\.gradle\caches\9.0-milestone-1\transforms\96a788d4b25d8546e5bf24497a2f7085\transformed\core-1.12.0\AndroidManifest.xml:23:9-81
+16        android:protectionLevel="signature" />
+16-->[androidx.core:core:1.12.0] C:\Users\User\.gradle\caches\9.0-milestone-1\transforms\96a788d4b25d8546e5bf24497a2f7085\transformed\core-1.12.0\AndroidManifest.xml:24:9-44
+17
+18    <uses-permission android:name="com.danijelzalac.teslaphoneguardpro.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+18-->[androidx.core:core:1.12.0] C:\Users\User\.gradle\caches\9.0-milestone-1\transforms\96a788d4b25d8546e5bf24497a2f7085\transformed\core-1.12.0\AndroidManifest.xml:26:5-97
+18-->[androidx.core:core:1.12.0] C:\Users\User\.gradle\caches\9.0-milestone-1\transforms\96a788d4b25d8546e5bf24497a2f7085\transformed\core-1.12.0\AndroidManifest.xml:26:22-94
+19
+20    <application
+20-->C:\Users\User\Documents\trae_projects\Tesla Phone Guard Pro\app\src\main\AndroidManifest.xml:8:5-45:19
+21        android:allowBackup="true"
+21-->C:\Users\User\Documents\trae_projects\Tesla Phone Guard Pro\app\src\main\AndroidManifest.xml:9:9-35
+22        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+22-->[androidx.core:core:1.12.0] C:\Users\User\.gradle\caches\9.0-milestone-1\transforms\96a788d4b25d8546e5bf24497a2f7085\transformed\core-1.12.0\AndroidManifest.xml:28:18-86
+23        android:dataExtractionRules="@xml/data_extraction_rules"
+23-->C:\Users\User\Documents\trae_projects\Tesla Phone Guard Pro\app\src\main\AndroidManifest.xml:10:9-65
+24        android:debuggable="true"
+25        android:extractNativeLibs="false"
+26        android:fullBackupContent="@xml/backup_rules"
+26-->C:\Users\User\Documents\trae_projects\Tesla Phone Guard Pro\app\src\main\AndroidManifest.xml:11:9-54
+27        android:icon="@mipmap/ic_launcher"
+27-->C:\Users\User\Documents\trae_projects\Tesla Phone Guard Pro\app\src\main\AndroidManifest.xml:12:9-43
+28        android:label="@string/app_name"
+28-->C:\Users\User\Documents\trae_projects\Tesla Phone Guard Pro\app\src\main\AndroidManifest.xml:13:9-41
+29        android:roundIcon="@mipmap/ic_launcher_round"
+29-->C:\Users\User\Documents\trae_projects\Tesla Phone Guard Pro\app\src\main\AndroidManifest.xml:14:9-54
+30        android:supportsRtl="true"
+30-->C:\Users\User\Documents\trae_projects\Tesla Phone Guard Pro\app\src\main\AndroidManifest.xml:15:9-35
+31        android:testOnly="true"
+32        android:theme="@style/Theme.TeslaPhoneGuardPro" >
+32-->C:\Users\User\Documents\trae_projects\Tesla Phone Guard Pro\app\src\main\AndroidManifest.xml:16:9-56
+33        <activity
+33-->C:\Users\User\Documents\trae_projects\Tesla Phone Guard Pro\app\src\main\AndroidManifest.xml:19:9-26:20
+34            android:name="com.danijelzalac.teslaphoneguardpro.MainActivity"
+34-->C:\Users\User\Documents\trae_projects\Tesla Phone Guard Pro\app\src\main\AndroidManifest.xml:20:13-41
+35            android:exported="true" >
+35-->C:\Users\User\Documents\trae_projects\Tesla Phone Guard Pro\app\src\main\AndroidManifest.xml:21:13-36
+36            <intent-filter>
+36-->C:\Users\User\Documents\trae_projects\Tesla Phone Guard Pro\app\src\main\AndroidManifest.xml:22:13-25:29
+37                <action android:name="android.intent.action.MAIN" />
+37-->C:\Users\User\Documents\trae_projects\Tesla Phone Guard Pro\app\src\main\AndroidManifest.xml:23:17-69
+37-->C:\Users\User\Documents\trae_projects\Tesla Phone Guard Pro\app\src\main\AndroidManifest.xml:23:25-66
+38
+39                <category android:name="android.intent.category.LAUNCHER" />
+39-->C:\Users\User\Documents\trae_projects\Tesla Phone Guard Pro\app\src\main\AndroidManifest.xml:24:17-77
+39-->C:\Users\User\Documents\trae_projects\Tesla Phone Guard Pro\app\src\main\AndroidManifest.xml:24:27-74
+40            </intent-filter>
+41        </activity>
+42
+43        <receiver
+43-->C:\Users\User\Documents\trae_projects\Tesla Phone Guard Pro\app\src\main\AndroidManifest.xml:28:9-43:20
+44            android:name="com.danijelzalac.teslaphoneguardpro.AdminReceiver"
+44-->C:\Users\User\Documents\trae_projects\Tesla Phone Guard Pro\app\src\main\AndroidManifest.xml:29:13-42
+45            android:description="@string/admin_description"
+45-->C:\Users\User\Documents\trae_projects\Tesla Phone Guard Pro\app\src\main\AndroidManifest.xml:30:13-60
+46            android:exported="true"
+46-->C:\Users\User\Documents\trae_projects\Tesla Phone Guard Pro\app\src\main\AndroidManifest.xml:33:13-36
+47            android:label="@string/admin_label"
+47-->C:\Users\User\Documents\trae_projects\Tesla Phone Guard Pro\app\src\main\AndroidManifest.xml:31:13-48
+48            android:permission="android.permission.BIND_DEVICE_ADMIN" >
+48-->C:\Users\User\Documents\trae_projects\Tesla Phone Guard Pro\app\src\main\AndroidManifest.xml:32:13-70
+49            <meta-data
+49-->C:\Users\User\Documents\trae_projects\Tesla Phone Guard Pro\app\src\main\AndroidManifest.xml:34:13-36:56
+50                android:name="android.app.device_admin"
+50-->C:\Users\User\Documents\trae_projects\Tesla Phone Guard Pro\app\src\main\AndroidManifest.xml:35:17-56
+51                android:resource="@xml/device_admin" />
+51-->C:\Users\User\Documents\trae_projects\Tesla Phone Guard Pro\app\src\main\AndroidManifest.xml:36:17-53
+52
+53            <intent-filter>
+53-->C:\Users\User\Documents\trae_projects\Tesla Phone Guard Pro\app\src\main\AndroidManifest.xml:37:13-42:29
+54                <action android:name="android.app.action.DEVICE_ADMIN_ENABLED" />
+54-->C:\Users\User\Documents\trae_projects\Tesla Phone Guard Pro\app\src\main\AndroidManifest.xml:38:17-82
+54-->C:\Users\User\Documents\trae_projects\Tesla Phone Guard Pro\app\src\main\AndroidManifest.xml:38:25-79
+55                <action android:name="android.app.action.DEVICE_ADMIN_DISABLED" />
+55-->C:\Users\User\Documents\trae_projects\Tesla Phone Guard Pro\app\src\main\AndroidManifest.xml:39:17-83
+55-->C:\Users\User\Documents\trae_projects\Tesla Phone Guard Pro\app\src\main\AndroidManifest.xml:39:25-80
+56                <action android:name="android.app.action.ACTION_PASSWORD_FAILED" />
+56-->C:\Users\User\Documents\trae_projects\Tesla Phone Guard Pro\app\src\main\AndroidManifest.xml:40:17-84
+56-->C:\Users\User\Documents\trae_projects\Tesla Phone Guard Pro\app\src\main\AndroidManifest.xml:40:25-81
+57                <action android:name="android.app.action.ACTION_PASSWORD_SUCCEEDED" />
+57-->C:\Users\User\Documents\trae_projects\Tesla Phone Guard Pro\app\src\main\AndroidManifest.xml:41:17-87
+57-->C:\Users\User\Documents\trae_projects\Tesla Phone Guard Pro\app\src\main\AndroidManifest.xml:41:25-84
+58            </intent-filter>
+59        </receiver>
+60
+61        <provider
+61-->[androidx.emoji2:emoji2:1.2.0] C:\Users\User\.gradle\caches\9.0-milestone-1\transforms\ab46ebef9aa6605b0c8ec23e1a51ef24\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+62            android:name="androidx.startup.InitializationProvider"
+62-->[androidx.emoji2:emoji2:1.2.0] C:\Users\User\.gradle\caches\9.0-milestone-1\transforms\ab46ebef9aa6605b0c8ec23e1a51ef24\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
+63            android:authorities="com.danijelzalac.teslaphoneguardpro.androidx-startup"
+63-->[androidx.emoji2:emoji2:1.2.0] C:\Users\User\.gradle\caches\9.0-milestone-1\transforms\ab46ebef9aa6605b0c8ec23e1a51ef24\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
+64            android:exported="false" >
+64-->[androidx.emoji2:emoji2:1.2.0] C:\Users\User\.gradle\caches\9.0-milestone-1\transforms\ab46ebef9aa6605b0c8ec23e1a51ef24\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
+65            <meta-data
+65-->[androidx.emoji2:emoji2:1.2.0] C:\Users\User\.gradle\caches\9.0-milestone-1\transforms\ab46ebef9aa6605b0c8ec23e1a51ef24\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+66                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+66-->[androidx.emoji2:emoji2:1.2.0] C:\Users\User\.gradle\caches\9.0-milestone-1\transforms\ab46ebef9aa6605b0c8ec23e1a51ef24\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
+67                android:value="androidx.startup" />
+67-->[androidx.emoji2:emoji2:1.2.0] C:\Users\User\.gradle\caches\9.0-milestone-1\transforms\ab46ebef9aa6605b0c8ec23e1a51ef24\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
+68            <meta-data
+68-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\User\.gradle\caches\9.0-milestone-1\transforms\805b48413e0f52bdbb971244cf10be05\transformed\lifecycle-process-2.6.1\AndroidManifest.xml:29:13-31:52
+69                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+69-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\User\.gradle\caches\9.0-milestone-1\transforms\805b48413e0f52bdbb971244cf10be05\transformed\lifecycle-process-2.6.1\AndroidManifest.xml:30:17-78
+70                android:value="androidx.startup" />
+70-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\User\.gradle\caches\9.0-milestone-1\transforms\805b48413e0f52bdbb971244cf10be05\transformed\lifecycle-process-2.6.1\AndroidManifest.xml:31:17-49
+71            <meta-data
+71-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\User\.gradle\caches\9.0-milestone-1\transforms\e0a582675f31bfca1397204cd51cc1a7\transformed\profileinstaller-1.3.0\AndroidManifest.xml:29:13-31:52
+72                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+72-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\User\.gradle\caches\9.0-milestone-1\transforms\e0a582675f31bfca1397204cd51cc1a7\transformed\profileinstaller-1.3.0\AndroidManifest.xml:30:17-85
+73                android:value="androidx.startup" />
+73-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\User\.gradle\caches\9.0-milestone-1\transforms\e0a582675f31bfca1397204cd51cc1a7\transformed\profileinstaller-1.3.0\AndroidManifest.xml:31:17-49
+74        </provider>
+75
+76        <receiver
+76-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\User\.gradle\caches\9.0-milestone-1\transforms\e0a582675f31bfca1397204cd51cc1a7\transformed\profileinstaller-1.3.0\AndroidManifest.xml:34:9-52:20
+77            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+77-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\User\.gradle\caches\9.0-milestone-1\transforms\e0a582675f31bfca1397204cd51cc1a7\transformed\profileinstaller-1.3.0\AndroidManifest.xml:35:13-76
+78            android:directBootAware="false"
+78-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\User\.gradle\caches\9.0-milestone-1\transforms\e0a582675f31bfca1397204cd51cc1a7\transformed\profileinstaller-1.3.0\AndroidManifest.xml:36:13-44
+79            android:enabled="true"
+79-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\User\.gradle\caches\9.0-milestone-1\transforms\e0a582675f31bfca1397204cd51cc1a7\transformed\profileinstaller-1.3.0\AndroidManifest.xml:37:13-35
+80            android:exported="true"
+80-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\User\.gradle\caches\9.0-milestone-1\transforms\e0a582675f31bfca1397204cd51cc1a7\transformed\profileinstaller-1.3.0\AndroidManifest.xml:38:13-36
+81            android:permission="android.permission.DUMP" >
+81-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\User\.gradle\caches\9.0-milestone-1\transforms\e0a582675f31bfca1397204cd51cc1a7\transformed\profileinstaller-1.3.0\AndroidManifest.xml:39:13-57
+82            <intent-filter>
+82-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\User\.gradle\caches\9.0-milestone-1\transforms\e0a582675f31bfca1397204cd51cc1a7\transformed\profileinstaller-1.3.0\AndroidManifest.xml:40:13-42:29
+83                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+83-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\User\.gradle\caches\9.0-milestone-1\transforms\e0a582675f31bfca1397204cd51cc1a7\transformed\profileinstaller-1.3.0\AndroidManifest.xml:41:17-91
+83-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\User\.gradle\caches\9.0-milestone-1\transforms\e0a582675f31bfca1397204cd51cc1a7\transformed\profileinstaller-1.3.0\AndroidManifest.xml:41:25-88
+84            </intent-filter>
+85            <intent-filter>
+85-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\User\.gradle\caches\9.0-milestone-1\transforms\e0a582675f31bfca1397204cd51cc1a7\transformed\profileinstaller-1.3.0\AndroidManifest.xml:43:13-45:29
+86                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+86-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\User\.gradle\caches\9.0-milestone-1\transforms\e0a582675f31bfca1397204cd51cc1a7\transformed\profileinstaller-1.3.0\AndroidManifest.xml:44:17-85
+86-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\User\.gradle\caches\9.0-milestone-1\transforms\e0a582675f31bfca1397204cd51cc1a7\transformed\profileinstaller-1.3.0\AndroidManifest.xml:44:25-82
+87            </intent-filter>
+88            <intent-filter>
+88-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\User\.gradle\caches\9.0-milestone-1\transforms\e0a582675f31bfca1397204cd51cc1a7\transformed\profileinstaller-1.3.0\AndroidManifest.xml:46:13-48:29
+89                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+89-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\User\.gradle\caches\9.0-milestone-1\transforms\e0a582675f31bfca1397204cd51cc1a7\transformed\profileinstaller-1.3.0\AndroidManifest.xml:47:17-88
+89-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\User\.gradle\caches\9.0-milestone-1\transforms\e0a582675f31bfca1397204cd51cc1a7\transformed\profileinstaller-1.3.0\AndroidManifest.xml:47:25-85
+90            </intent-filter>
+91            <intent-filter>
+91-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\User\.gradle\caches\9.0-milestone-1\transforms\e0a582675f31bfca1397204cd51cc1a7\transformed\profileinstaller-1.3.0\AndroidManifest.xml:49:13-51:29
+92                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+92-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\User\.gradle\caches\9.0-milestone-1\transforms\e0a582675f31bfca1397204cd51cc1a7\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:17-95
+92-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\User\.gradle\caches\9.0-milestone-1\transforms\e0a582675f31bfca1397204cd51cc1a7\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:25-92
+93            </intent-filter>
+94        </receiver>
+95    </application>
+96
+97</manifest>

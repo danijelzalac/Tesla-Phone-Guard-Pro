@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "com.danijelzalac.teslaphoneguardpro.app-merged_res-31:/layout_activity_main.xml.flat",
+        "source": "com.danijelzalac.teslaphoneguardpro.app-main-33:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.danijelzalac.teslaphoneguardpro.app-merged_res-31:/xml_backup_rules.xml.flat",
+        "source": "com.danijelzalac.teslaphoneguardpro.app-main-33:/xml/backup_rules.xml"
+    },
+    {
+        "merged": "com.danijelzalac.teslaphoneguardpro.app-merged_res-31:/xml_data_extraction_rules.xml.flat",
+        "source": "com.danijelzalac.teslaphoneguardpro.app-main-33:/xml/data_extraction_rules.xml"
+    },
+    {
+        "merged": "com.danijelzalac.teslaphoneguardpro.app-merged_res-31:/xml_device_admin.xml.flat",
+        "source": "com.danijelzalac.teslaphoneguardpro.app-main-33:/xml/device_admin.xml"
+    }
+]

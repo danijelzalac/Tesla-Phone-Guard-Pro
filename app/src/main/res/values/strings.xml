@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">Tesla Phone Guard Pro</string>
+    <string name="admin_label">Tesla Guard Admin</string>
+    <string name="admin_description">Required to perform emergency lock and wipe operations, and to monitor security attempts.</string>
+    <string name="enable_admin">Enable Device Admin</string>
+    <string name="disable_admin">Disable Device Admin</string>
+    <string name="lock_device">Lock Device Now</string>
+    <string name="wipe_data">Wipe Data (Emergency)</string>
+    <string name="status_active">System Status: ARMED</string>
+    <string name="status_inactive">System Status: DISARMED</string>
+    <string name="attribution">by Danijel Zalac 2026</string>
+    <string name="security_features_title">Security Protocols</string>
+    <string name="feature_failed_attempts">Failed Attempts: %1$d / %2$d</string>
+    <string name="reset_counter">Reset Counter</string>
+    
+    <!-- Enhanced Descriptions -->
+    <string name="description_lock">INSTANT LOCKDOWN: Immediately locks the screen and engages security protocols. Use this to quickly secure your device from nearby threats.</string>
+    <string name="description_wipe">EMERGENCY DATA DESTRUCTION: Performs a factory reset to permanently erase all data on the device. This is an irreversible last-resort measure for extreme situations.</string>
+    <string name="description_monitor">ACTIVE SURVEILLANCE: Continuously monitors unlock attempts. If the limit is exceeded, the auto-wipe protocol is engaged.</string>
+    
+    <!-- New Settings Strings with Better Descriptions -->
+    <string name="setting_usb_wipe_title">USB Port Defense</string>
+    <string name="setting_usb_wipe_desc">ANTI-FORENSIC PROTECTION: Automatically triggers a data wipe if a USB data connection is detected while the device is locked. This prevents forensic tools from extracting data.</string>
+    <string name="setting_max_attempts_title">Brute Force Limit</string>
+    <string name="setting_max_attempts_desc">INTRUSION THRESHOLD: Sets the maximum number of incorrect password attempts allowed before the device assumes a brute-force attack and self-destructs (wipes data).</string>
+    <string name="save_settings">Save Configuration</string>
+    <string name="settings_saved">Security Configuration Updated</string>
+    <string name="warning_usb_wipe">WARNING: Charging your phone while locked might trigger a wipe if the charger requests data!</string>
+    
+    <!-- Battery Optimization -->
+    <string name="battery_opt_warning_title">Battery Optimization Warning</string>
+    <string name="battery_opt_warning_msg">For the \'Inactivity Wipe\' feature to work reliably, you MUST disable battery optimization for this app.\n\nOtherwise, the system may kill the timer to save battery, preventing the wipe from happening.</string>
+    <string name="battery_opt_fix_now">Fix Now</string>
+    <string name="battery_opt_later">Later</string>
+    <string name="battery_opt_toast_error">Could not open settings automatically. Please disable battery optimization manually.</string>
+    <string name="battery_opt_button">Disable Battery Optimization</string>
+
+    <!-- Validation -->
+    <string name="error_min_attempts">Minimum 3 attempts required</string>
+    <string name="error_invalid_attempts">Invalid max attempts number</string>
+    <string name="error_negative_hours">Hours cannot be negative</string>
+    <string name="error_invalid_hours">Invalid inactivity hours</string>
+    
+    <!-- Admin Messages -->
+    <string name="msg_device_locked">Device Locked</string>
+    <string name="msg_enable_admin_first">Please enable Device Admin first</string>
+    <string name="msg_counter_reset">Counter Reset</string>
+    <string name="title_emergency_wipe">Emergency Wipe</string>
+    <string name="msg_wipe_confirm">WARNING: This will factory reset the device and erase all data. This action cannot be undone.\n\nNote: On Android 10+, this requires Device Owner privileges.</string>
+    <string name="device_owner_warning">WARNING: On Android 10+, this app must be set as Device Owner to wipe data automatically. ADB command required: adb shell dpm set-device-owner com.danijelzalac.teslaphoneguardpro/.AdminReceiver</string>
+</resources>

@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textColor="@color/gold"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvAttribution"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/attribution"
+            android:textColor="@color/gold_dark"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvTitle"
+            android:layout_marginTop="4dp"/>
+
+        <TextView
+            android:id="@+id/tvStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/status_inactive"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="24dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvAttribution" />
+
+        <Button
+            android:id="@+id/btnEnableAdmin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/gold"
+            android:text="@string/enable_admin"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/tvStatus" />
+
+        <Button
+            android:id="@+id/btnBatteryOpt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="@color/red_warning"
+            android:text="Disable Battery Optimization"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:visibility="gone"
+            app:layout_constraintTop_toBottomOf="@id/btnEnableAdmin" />
+
+        <!-- Security Configuration Section -->
+        <TextView
+            android:id="@+id/tvConfigTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Automatic Defense Configuration"
+            android:textColor="@color/gold"
+            android:textStyle="bold"
+            android:layout_marginTop="32dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btnEnableAdmin"/>
+
+        <View
+            android:id="@+id/dividerConfig"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gold_dark"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@id/tvConfigTitle"/>
+
+        <!-- Max Attempts Config -->
+        <TextView
+            android:id="@+id/tvMaxAttemptsTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/setting_max_attempts_title"
+            android:textColor="@color/white"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/dividerConfig"/>
+
+        <EditText
+            android:id="@+id/etMaxAttempts"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:text="10"
+            android:textColor="@color/gold"
+            android:backgroundTint="@color/gold_dark"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tvMaxAttemptsTitle"
+            app:layout_constraintBottom_toBottomOf="@id/tvMaxAttemptsTitle"/>
+
+        <TextView
+            android:id="@+id/tvMaxAttemptsDesc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/setting_max_attempts_desc"
+            android:textColor="@color/gold_dark"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvMaxAttemptsTitle"/>
+
+        <!-- Inactivity Wipe Config -->
+        <TextView
+            android:id="@+id/tvInactivityTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Inactivity Wipe (Dead Man's Switch)"
+            android:textColor="@color/white"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvMaxAttemptsDesc"/>
+
+        <EditText
+            android:id="@+id/etInactivityHours"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:text="0"
+            android:textColor="@color/gold"
+            android:backgroundTint="@color/gold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tvInactivityTitle"
+            app:layout_constraintBottom_toBottomOf="@id/tvInactivityTitle"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Wipe data if not unlocked for X hours (0 to disable)"
+            android:textColor="@color/gold_dark"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvInactivityTitle"/>
+
+        <!-- USB Wipe Config -->
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/switchUsbWipe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/setting_usb_wipe_title"
+            android:textColor="@color/white"
+            android:layout_marginTop="24dp"
+            app:thumbTint="@color/gold"
+            app:trackTint="@color/gold_dark"
+            app:layout_constraintTop_toBottomOf="@id/etInactivityHours"/>
+
+        <TextView
+            android:id="@+id/tvUsbWipeDesc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/setting_usb_wipe_desc"
+            android:textColor="@color/gold_dark"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/switchUsbWipe"/>
+
+        <Button
+            android:id="@+id/btnSaveSettings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/save_settings"
+            android:backgroundTint="@color/dark_grey"
+            android:textColor="@color/gold"
+            app:strokeColor="@color/gold"
+            app:strokeWidth="1dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@id/tvUsbWipeDesc"/>
+
+        <!-- Manual Controls Section -->
+        <TextView
+            android:id="@+id/tvManualTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Manual Controls"
+            android:textColor="@color/gold"
+            android:textStyle="bold"
+            android:layout_marginTop="32dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btnSaveSettings"/>
+
+        <View
+            android:id="@+id/dividerManual"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gold_dark"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@id/tvManualTitle"/>
+
+        <Button
+            android:id="@+id/btnLock"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lock_device"
+            android:backgroundTint="@color/dark_grey"
+            android:textColor="@color/gold"
+            app:strokeColor="@color/gold"
+            app:strokeWidth="1dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@id/dividerManual"/>
+
+        <Button
+            android:id="@+id/btnWipe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/wipe_data"
+            android:backgroundTint="@color/red_warning"
+            android:textColor="@color/white"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@id/btnLock"/>
+
+        <TextView
+            android:id="@+id/tvFailedAttempts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Failed Attempts: 0 / 10"
+            android:textColor="@color/red_warning"
+            android:textAlignment="center"
+            android:layout_marginTop="24dp"
+            app:layout_constraintTop_toBottomOf="@id/btnWipe"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
