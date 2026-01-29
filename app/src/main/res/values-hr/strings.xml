@@ -30,7 +30,7 @@
 
     <!-- Battery Optimization -->
     <string name="battery_opt_warning_title">Upozorenje Baterije</string>
-    <string name="battery_opt_warning_msg">Za pouzdano 'Brisanje pri Neaktivnosti' MORATE isključiti optimizaciju baterije za ovu aplikaciju, inače sustav može ugasiti tajmer.</string>
+    <string name="battery_opt_warning_msg">Za pouzdano \'Brisanje pri Neaktivnosti\' MORATE isključiti optimizaciju baterije za ovu aplikaciju, inače sustav može ugasiti tajmer.</string>
     <string name="battery_opt_fix_now">Riješi Sada</string>
     <string name="battery_opt_later">Kasnije</string>
     <string name="battery_opt_toast_error">Ne mogu otvoriti postavke. Isključite ručno.</string>
@@ -41,8 +41,8 @@
     <string name="error_invalid_attempts">Nevažeći broj</string>
     <string name="error_negative_hours">Sati ne mogu biti negativni</string>
     <string name="error_invalid_hours">Nevažeći sati neaktivnosti</string>
-    <string name="disclaimer_title">Pravno Odricanje & Sigurnost</string>
-    <string name="disclaimer_msg">Ova aplikacija može TRAJNO OBRISATI sve podatke na uređaju.\n\n1. Omogućavanjem ovih opcija prihvaćate punu odgovornost za gubitak podataka.\n2. Autor NIJE odgovoran za slučajno brisanje.\n3. Za rad 'Brisanja pri Neaktivnosti' dok je telefon UGAŠEN, MORATE podesiti 'Planirano uključivanje' u postavkama sustava.\n\nPrihvaćate li rizike?</string>
+    <string name="disclaimer_title">Pravno Odricanje &amp; Sigurnost</string>
+    <string name="disclaimer_msg">Ova aplikacija može TRAJNO OBRISATI sve podatke na uređaju.\n\n1. Omogućavanjem ovih opcija prihvaćate punu odgovornost za gubitak podataka.\n2. Autor NIJE odgovoran za slučajno brisanje.\n3. Za rad \'Brisanja pri Neaktivnosti\' dok je telefon UGAŠEN, MORATE podesiti \'Planirano uključivanje\' u postavkama sustava.\n\nPrihvaćate li rizike?</string>
     <string name="accept_risk">PRIHVAĆAM</string>
     <string name="decline_risk">ODUSTANI</string>
 

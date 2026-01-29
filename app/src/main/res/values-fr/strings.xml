@@ -41,7 +41,7 @@
     <string name="error_invalid_attempts">Nombre invalide</string>
     <string name="error_negative_hours">Heures ne peuvent être négatives</string>
     <string name="error_invalid_hours">Heures inactivité invalides</string>
-    <string name="disclaimer_title">Avis Légal & Sécurité</string>
+    <string name="disclaimer_title">Avis Légal &amp; Sécurité</string>
     <string name="disclaimer_msg">Cette appli peut EFFACER DÉFINITIVEMENT toutes les données.\n\n1. Vous acceptez la responsabilité de toute perte de données.\n2. Le développeur N\'EST PAS responsable des effacements accidentels.\n3. Pour que l\'effacement fonctionne téléphone ÉTEINT, vous DEVEZ programmer \'Allumage Auto\' dans les paramètres.\n\nAcceptez-vous ces risques?</string>
     <string name="accept_risk">J\'ACCEPTE</string>
     <string name="decline_risk">ANNULER</string>

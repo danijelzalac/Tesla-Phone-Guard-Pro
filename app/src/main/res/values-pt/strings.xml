@@ -30,7 +30,7 @@
 
     <!-- Battery Optimization -->
     <string name="battery_opt_warning_title">Aviso Otim. Bateria</string>
-    <string name="battery_opt_warning_msg">Para 'Limpeza por Inatividade' funcionar, VOCÊ DEVE desativar otimização de bateria para este app.</string>
+    <string name="battery_opt_warning_msg">Para \'Limpeza por Inatividade\' funcionar, VOCÊ DEVE desativar otimização de bateria para este app.</string>
     <string name="battery_opt_fix_now">Corrigir</string>
     <string name="battery_opt_later">Depois</string>
     <string name="battery_opt_toast_error">Não foi possível abrir configurações. Desative manualmente.</string>
@@ -41,7 +41,7 @@
     <string name="error_invalid_attempts">Número inválido</string>
     <string name="error_negative_hours">Horas não podem ser negativas</string>
     <string name="error_invalid_hours">Horas inatividade inválidas</string>
-    <string name="disclaimer_title">Aviso Legal & Segurança</string>
+    <string name="disclaimer_title">Aviso Legal &amp; Segurança</string>
     <string name="disclaimer_msg">Este aplicativo pode APAGAR PERMANENTEMENTE todos os dados.\n\n1. Você aceita total responsabilidade por perda de dados.\n2. O desenvolvedor NÃO é responsável por apagamentos acidentais.\n3. Para funcionar com telefone DESLIGADO, você DEVE agendar \'Ligação Auto\' nas configurações.\n\nAceita estes riscos?</string>
     <string name="accept_risk">ACEITO</string>
     <string name="decline_risk">CANCELAR</string>

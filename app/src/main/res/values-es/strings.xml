@@ -30,18 +30,7 @@
 
     <!-- Battery Optimization -->
     <string name="battery_opt_warning_title">Aviso Opt. Batería</string>
-    <string name="battery_opt_warning_msg">Para que el 'Borrado por Inactividad' funcione, DEBE desactivar optimización de batería para esta app, o el sistema detendrá el temporizador.</string>
-    <string name="battery_opt_fix_now">Corregir</string>
-    <string name="battery_opt_later">Luego</string>
-    <string name="battery_opt_toast_error">No se pudo abrir configuración. Desactive manualmente.</string>
-    <string name="battery_opt_button">Desactivar Opt. Batería</string>
-
-    <!-- Validation -->
-    <string name="error_min_attempts">Mín 3 intentos requeridos</string>
-    <string name="error_invalid_attempts">Número inválido</string>
-    <string name="error_negative_hours">Horas no pueden ser negativas</string>
-    <string name="error_invalid_hours">Horas inactividad inválidas</string>
-    <string name="disclaimer_title">Aviso Legal & Seguridad</string>
+    <string name="battery_opt_warning_msg">Para que el \'Borrado por Inactividad\' funcione, DEBE desactivar optimización de batería para esta app, o el sistema detendrá el temporizador.</string>
     <string name="disclaimer_msg">Esta app puede BORRAR PERMANENTEMENTE todos los datos.\n\n1. Acepta total responsabilidad por pérdida de datos.\n2. El desarrollador NO es responsable de borrados accidentales.\n3. Para que funcione con teléfono APAGADO, DEBE programar \'Encendido Auto\' en ajustes.\n\n¿Acepta estos riesgos?</string>
     <string name="accept_risk">ACEPTO</string>
     <string name="decline_risk">CANCELAR</string>

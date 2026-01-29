@@ -30,7 +30,7 @@
 
     <!-- Battery Optimization -->
     <string name="battery_opt_warning_title">Batterieoptimierung Warnung</string>
-    <string name="battery_opt_warning_msg">Für zuverlässige 'Inaktivitätslöschung' MÜSSEN Sie die Batterieoptimierung für diese App deaktivieren, sonst stoppt das System den Timer.</string>
+    <string name="battery_opt_warning_msg">Damit \'Löschen bei Inaktivität\' funktioniert, wenn das Telefon AUS ist, MÜSSEN Sie \'Geplantes Einschalten\' in den Systemeinstellungen aktivieren.</string>
     <string name="battery_opt_fix_now">Jetzt beheben</string>
     <string name="battery_opt_later">Später</string>
     <string name="battery_opt_toast_error">Konnte Einstellungen nicht öffnen. Bitte manuell deaktivieren.</string>
@@ -41,8 +41,8 @@
     <string name="error_invalid_attempts">Ungültige Anzahl</string>
     <string name="error_negative_hours">Stunden können nicht negativ sein</string>
     <string name="error_invalid_hours">Ungültige Inaktivitätsstunden</string>
-    <string name="disclaimer_title">Rechtlicher Hinweis & Sicherheit</string>
-    <string name="disclaimer_msg">Diese App kann ALLE Daten dauerhaft löschen.\n\n1. Sie übernehmen die volle Verantwortung für Datenverlust.\n2. Der Entwickler haftet NICHT für versehentliches Löschen.\n3. Damit 'Löschen bei Inaktivität' funktioniert, wenn das Telefon AUS ist, MÜSSEN Sie 'Geplantes Einschalten' in den Systemeinstellungen aktivieren.\n\nAkzeptieren Sie diese Risiken?</string>
+    <string name="disclaimer_title">Rechtlicher Hinweis &amp; Sicherheit</string>
+    <string name="disclaimer_msg">Diese App kann ALLE Daten dauerhaft löschen.\n\n1. Sie übernehmen die volle Verantwortung für Datenverlust.\n2. Der Entwickler haftet NICHT für versehentliches Löschen.\n3. Damit \'Löschen bei Inaktivität\' funktioniert, wenn das Telefon AUS ist, MÜSSEN Sie \'Geplantes Einschalten\' in den Systemeinstellungen aktivieren.\n\nAkzeptieren Sie diese Risiken?</string>
     <string name="accept_risk">ICH AKZEPTIERE</string>
     <string name="decline_risk">ABBRECHEN</string>
 

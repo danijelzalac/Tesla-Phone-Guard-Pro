@@ -41,7 +41,7 @@
     <string name="error_invalid_attempts">Numero non valido</string>
     <string name="error_negative_hours">Ore non possono essere negative</string>
     <string name="error_invalid_hours">Ore inattività non valide</string>
-    <string name="disclaimer_title">Disclaimer Legale & Sicurezza</string>
+    <string name="disclaimer_title">Disclaimer Legale &amp; Sicurezza</string>
     <string name="disclaimer_msg">Questa app può CANCELLARE PERMANENTEMENTE tutti i dati.\n\n1. Accetti la piena responsabilità per la perdita di dati.\n2. Lo sviluppatore NON è responsabile per cancellazioni accidentali.\n3. Perchè funzioni a telefono SPENTO, DEVI programmare \'Accensione Auto\' nelle impostazioni.\n\nAccetti questi rischi?</string>
     <string name="accept_risk">ACCETTO</string>
     <string name="decline_risk">ANNULLA</string>

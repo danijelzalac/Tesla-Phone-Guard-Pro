@@ -30,7 +30,7 @@
 
     <!-- Battery Optimization -->
     <string name="battery_opt_warning_title">Ostrzeżenie Opt. Baterii</string>
-    <string name="battery_opt_warning_msg">Aby 'Czyszczenie przy braku aktywności' działało, MUSISZ wyłączyć optymalizację baterii dla tej aplikacji, inaczej system zatrzyma licznik.</string>
+    <string name="battery_opt_warning_msg">Aby \'Czyszczenie przy braku aktywności\' działało, MUSISZ wyłączyć optymalizację baterii dla tej aplikacji, inaczej system zatrzyma licznik.</string>
     <string name="battery_opt_fix_now">Napraw</string>
     <string name="battery_opt_later">Później</string>
     <string name="battery_opt_toast_error">Nie można otworzyć ustawień. Wyłącz ręcznie.</string>
@@ -41,7 +41,7 @@
     <string name="error_invalid_attempts">Nieprawidłowa liczba</string>
     <string name="error_negative_hours">Godziny nie mogą być ujemne</string>
     <string name="error_invalid_hours">Nieprawidłowe godziny</string>
-    <string name="disclaimer_title">Nota Prawna & Bezpieczeństwo</string>
+    <string name="disclaimer_title">Nota Prawna &amp; Bezpieczeństwo</string>
     <string name="disclaimer_msg">Ta aplikacja może TRWALE USUNĄĆ wszystkie dane.\n\n1. Akceptujesz pełną odpowiedzialność za utratę danych.\n2. Deweloper NIE odpowiada za przypadkowe usunięcie.\n3. Aby działało przy WYŁĄCZONYM telefonie, MUSISZ zaplanować \'Auto Włączanie\' w ustawieniach.\n\nAkceptujesz ryzyko?</string>
     <string name="accept_risk">AKCEPTUJĘ</string>
     <string name="decline_risk">ANULUJ</string>

@@ -30,7 +30,7 @@
 
     <!-- Battery Optimization -->
     <string name="battery_opt_warning_title">Varning Batterioptimering</string>
-    <string name="battery_opt_warning_msg">För att 'Radering vid Inaktivitet' ska fungera MÅSTE du inaktivera batterioptimering för denna app.</string>
+    <string name="battery_opt_warning_msg">För att \'Radering vid Inaktivitet\' ska fungera MÅSTE du inaktivera batterioptimering för denna app.</string>
     <string name="battery_opt_fix_now">Åtgärda Nu</string>
     <string name="battery_opt_later">Senare</string>
     <string name="battery_opt_toast_error">Kunde inte öppna inställningar. Inaktivera manuellt.</string>
@@ -41,7 +41,7 @@
     <string name="error_invalid_attempts">Ogiltigt antal</string>
     <string name="error_negative_hours">Timmar kan inte vara negativa</string>
     <string name="error_invalid_hours">Ogiltiga inaktivitetstimmar</string>
-    <string name="disclaimer_title">Juridisk Ansvarsfriskrivning & Säkerhet</string>
+    <string name="disclaimer_title">Juridisk Ansvarsfriskrivning &amp; Säkerhet</string>
     <string name="disclaimer_msg">Denna app kan PERMANENT RADERA all data.\n\n1. Du accepterar fullt ansvar för dataförlust.\n2. Utvecklaren ansvarar INTE för oavsiktlig radering.\n3. För att fungera när telefonen är AVSTÄNGD MÅSTE du schemalägga \'Auto Start\' i inställningarna.\n\nAccepterar du dessa risker?</string>
     <string name="accept_risk">JAG ACCEPTERAR</string>
     <string name="decline_risk">AVBRYT</string>

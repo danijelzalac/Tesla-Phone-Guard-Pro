@@ -30,7 +30,7 @@
 
     <!-- Battery Optimization -->
     <string name="battery_opt_warning_title">Waarschuwing Batterij-opt.</string>
-    <string name="battery_opt_warning_msg">Voor betrouwbaar 'Wissen bij Inactiviteit' MOET u batterij-optimalisatie voor deze app uitschakelen, anders stopt het systeem de timer.</string>
+    <string name="battery_opt_warning_msg">Voor betrouwbaar \'Wissen bij Inactiviteit\' MOET u batterij-optimalisatie voor deze app uitschakelen, anders stopt het systeem de timer.</string>
     <string name="battery_opt_fix_now">Corrigeren</string>
     <string name="battery_opt_later">Later</string>
     <string name="battery_opt_toast_error">Kan instellingen niet openen. Schakel handmatig uit.</string>
@@ -41,7 +41,7 @@
     <string name="error_invalid_attempts">Ongeldig aantal</string>
     <string name="error_negative_hours">Uren kunnen niet negatief zijn</string>
     <string name="error_invalid_hours">Ongeldige uren inactiviteit</string>
-    <string name="disclaimer_title">Juridische Disclaimer & Veiligheid</string>
+    <string name="disclaimer_title">Juridische Disclaimer &amp; Veiligheid</string>
     <string name="disclaimer_msg">Deze app kan ALLE gegevens permanent WISSEN.\n\n1. U accepteert volledige verantwoordelijkheid voor gegevensverlies.\n2. De ontwikkelaar is NIET verantwoordelijk voor accidenteel wissen.\n3. Voor werking bij UITGESCHAKELDE telefoon MOET u \'Auto Inschakelen\' plannen in instellingen.\n\nAccepteert u deze risico\'s?</string>
     <string name="accept_risk">IK ACCEPTEER</string>
     <string name="decline_risk">ANNULEREN</string>

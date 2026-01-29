@@ -30,7 +30,7 @@
 
     <!-- Battery Optimization -->
     <string name="battery_opt_warning_title">Varování Baterie</string>
-    <string name="battery_opt_warning_msg">Pro funkčnost 'Vymazání při Nečinnosti' MUSÍTE vypnout optimalizaci baterie pro tuto aplikaci.</string>
+    <string name="battery_opt_warning_msg">Pro funkčnost \'Vymazání při Nečinnosti\' MUSÍTE vypnout optimalizaci baterie pro tuto aplikaci.</string>
     <string name="battery_opt_fix_now">Opravit Nyní</string>
     <string name="battery_opt_later">Později</string>
     <string name="battery_opt_toast_error">Nelze otevřít nastavení. Vypněte ručně.</string>
@@ -41,7 +41,7 @@
     <string name="error_invalid_attempts">Neplatné číslo</string>
     <string name="error_negative_hours">Hodiny nemohou být záporné</string>
     <string name="error_invalid_hours">Neplatné hodiny nečinnosti</string>
-    <string name="disclaimer_title">Právní Upozornění & Bezpečnost</string>
+    <string name="disclaimer_title">Právní Upozornění &amp; Bezpečnost</string>
     <string name="disclaimer_msg">Tato aplikace může TRVALE VYMAZAT všechna data.\n\n1. Přijímáte plnou odpovědnost za ztrátu dat.\n2. Vývojář NENÍ odpovědný za náhodné vymazání.\n3. Pro funkčnost při VYPNUTÉM telefonu MUSÍTE naplánovat \'Auto Zapnutí\' v nastavení.\n\nPřijímáte tato rizika?</string>
     <string name="accept_risk">PŘIJÍMÁM</string>
     <string name="decline_risk">ZRUŠIT</string>

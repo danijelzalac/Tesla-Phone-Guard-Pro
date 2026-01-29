@@ -23,6 +23,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var devicePolicyManager: DevicePolicyManager
     private lateinit var compName: ComponentName
     private lateinit var tvStatus: TextView
+    private lateinit var tvAttribution: TextView
     private lateinit var btnEnableAdmin: Button
     private lateinit var btnBatteryOpt: Button
     private lateinit var btnLock: Button
@@ -47,8 +48,10 @@ class MainActivity : AppCompatActivity() {
 
         // Initialize Views
         tvStatus = findViewById(R.id.tvStatus)
+        tvAttribution = findViewById(R.id.tvAttribution)
         btnEnableAdmin = findViewById(R.id.btnEnableAdmin)
         btnBatteryOpt = findViewById(R.id.btnBatteryOpt)
+        btnLock = findViewById(R.id.btnLock)
         btnLock = findViewById(R.id.btnLock)
         btnWipe = findViewById(R.id.btnWipe)
         tvFailedAttempts = findViewById(R.id.tvFailedAttempts)

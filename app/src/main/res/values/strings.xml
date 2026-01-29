@@ -40,7 +40,7 @@
     <string name="error_invalid_attempts">Invalid max attempts number</string>
     <string name="error_negative_hours">Hours cannot be negative</string>
     <string name="error_invalid_hours">Invalid inactivity hours</string>
-    <string name="disclaimer_title">Legal Disclaimer & Safety</string>
+    <string name="disclaimer_title">Legal Disclaimer &amp; Safety</string>
     <string name="disclaimer_msg">This app can PERMANENTLY ERASE all data on your device.\n\n1. By enabling these features, you accept full responsibility for any data loss.\n2. The developer is NOT responsible for accidental wipes.\n3. For \'Inactivity Wipe\' to work if the phone is OFF, you MUST schedule \'Auto Power On\' in your phone settings.\n\nDo you accept these risks?</string>
     <string name="accept_risk">I ACCEPT</string>
     <string name="decline_risk">CANCEL</string>
