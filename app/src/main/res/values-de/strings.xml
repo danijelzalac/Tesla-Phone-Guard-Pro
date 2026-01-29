@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Tesla Phone Guard Pro</string>
+    <string name="admin_label">Tesla Guard Admin</string>
+    <string name="admin_description">Erforderlich für Notfallsperrung, Datenlöschung und Überwachung von Sicherheitsversuchen.</string>
+    <string name="enable_admin">Geräte-Admin aktivieren</string>
+    <string name="disable_admin">Geräte-Admin deaktivieren</string>
+    <string name="lock_device">Gerät jetzt sperren</string>
+    <string name="wipe_data">Daten löschen (Notfall)</string>
+    <string name="status_active">Systemstatus: SCHARF</string>
+    <string name="status_inactive">Systemstatus: UNSCHARF</string>
+    <string name="attribution">von Danijel Zalac 2026</string>
+    <string name="security_features_title">Sicherheitsprotokolle</string>
+    <string name="feature_failed_attempts">Fehlgeschlagene Versuche: %1$d / %2$d</string>
+    <string name="reset_counter">Zähler zurücksetzen</string>
+
+    <!-- Enhanced Descriptions -->
+    <string name="description_lock">SOFORT-SPERRE: Sperrt den Bildschirm sofort und aktiviert Sicherheitsprotokolle. Schützt Ihr Gerät schnell vor Bedrohungen.</string>
+    <string name="description_wipe">NOTFALL-DATENVERNICHTUNG: Werksreset zur dauerhaften Löschung aller Daten. Irreversible Maßnahme für extreme Situationen.</string>
+    <string name="description_monitor">AKTIVE ÜBERWACHUNG: Überwacht Entsperrversuche. Bei Limitüberschreitung wird das Löschprotokoll aktiviert.</string>
+
+    <!-- New Settings Strings with Better Descriptions -->
+    <string name="setting_usb_wipe_title">USB-Port-Abwehr</string>
+    <string name="setting_usb_wipe_desc">ANTI-FORENSIK: Löst Datenlöschung aus, wenn im gesperrten Zustand eine USB-Datenverbindung erkannt wird.</string>
+    <string name="setting_max_attempts_title">Brute-Force-Limit</string>
+    <string name="setting_max_attempts_desc">EINDRING-SCHWELLE: Max. Anzahl falscher Passworteingaben vor Selbstzerstörung (Datenlöschung).</string>
+    <string name="save_settings">Konfiguration speichern</string>
+    <string name="settings_saved">Sicherheitskonfiguration aktualisiert</string>
+    <string name="warning_usb_wipe">WARNUNG: Laden im gesperrten Zustand kann Löschung auslösen, wenn Ladegerät Daten anfordert!</string>
+
+    <!-- Battery Optimization -->
+    <string name="battery_opt_warning_title">Batterieoptimierung Warnung</string>
+    <string name="battery_opt_warning_msg">Für zuverlässige 'Inaktivitätslöschung' MÜSSEN Sie die Batterieoptimierung für diese App deaktivieren, sonst stoppt das System den Timer.</string>
+    <string name="battery_opt_fix_now">Jetzt beheben</string>
+    <string name="battery_opt_later">Später</string>
+    <string name="battery_opt_toast_error">Konnte Einstellungen nicht öffnen. Bitte manuell deaktivieren.</string>
+    <string name="battery_opt_button">Batterieoptimierung deaktivieren</string>
+
+    <!-- Validation -->
+    <string name="error_min_attempts">Mindestens 3 Versuche erforderlich</string>
+    <string name="error_invalid_attempts">Ungültige Anzahl</string>
+    <string name="error_negative_hours">Stunden können nicht negativ sein</string>
+    <string name="error_invalid_hours">Ungültige Inaktivitätsstunden</string>
+    <string name="disclaimer_title">Rechtlicher Hinweis & Sicherheit</string>
+    <string name="disclaimer_msg">Diese App kann ALLE Daten dauerhaft löschen.\n\n1. Sie übernehmen die volle Verantwortung für Datenverlust.\n2. Der Entwickler haftet NICHT für versehentliches Löschen.\n3. Damit 'Löschen bei Inaktivität' funktioniert, wenn das Telefon AUS ist, MÜSSEN Sie 'Geplantes Einschalten' in den Systemeinstellungen aktivieren.\n\nAkzeptieren Sie diese Risiken?</string>
+    <string name="accept_risk">ICH AKZEPTIERE</string>
+    <string name="decline_risk">ABBRECHEN</string>
+
+    <!-- Admin Messages -->
+    <string name="msg_device_locked">Gerät gesperrt</string>
+    <string name="msg_enable_admin_first">Bitte zuerst Geräte-Admin aktivieren</string>
+    <string name="msg_counter_reset">Zähler zurückgesetzt</string>
+    <string name="title_emergency_wipe">Notfall-Löschung</string>
+    <string name="msg_wipe_confirm">WARNUNG: Werksreset löscht alle Daten unwiderruflich.\n\nHinweis: Android 10+ erfordert Device Owner Rechte.</string>
+    <string name="device_owner_warning">WARNUNG: Ab Android 10+ muss diese App Device Owner sein. ADB Befehl: adb shell dpm set-device-owner com.danijelzalac.teslaphoneguardpro/.AdminReceiver</string>
+</resources>

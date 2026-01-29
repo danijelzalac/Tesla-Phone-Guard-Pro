@@ -20,10 +20,13 @@ class GuardService : Service() {
             if (Intent.ACTION_USER_PRESENT == intent.action) {
                 // User unlocked the device (works for PIN, Pattern, Biometrics)
                 val prefs = SecurityPreferences(context)
+                
+                // 1. Update the "Last Alive" timestamp
                 prefs.lastUnlockTimestamp = System.currentTimeMillis()
                 
-                // Reschedule inactivity check (AlarmManager optimization)
-                // We could cancel existing alarm and set a new one here.
+                // 2. Reschedule the Dead Man's Switch alarm
+                // This pushes the "Wipe Deadline" further into the future
+                SecurityManager.rescheduleInactivityAlarm(context)
             }
         }
     }
@@ -59,6 +62,7 @@ class GuardService : Service() {
     }
 
     override fun onStartCommand(intent: Intent?, flags: Int, startId: Int): Int {
+        // Sticky ensures service restarts if killed
         return START_STICKY
     }
 

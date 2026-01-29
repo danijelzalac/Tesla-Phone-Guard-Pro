@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Tesla Phone Guard Pro</string>
+    <string name="admin_label">Tesla Guard Admin</string>
+    <string name="admin_description">Vyžadováno pro nouzové uzamčení, vymazání dat a monitorování bezpečnostních pokusů.</string>
+    <string name="enable_admin">Povolit Správce Zařízení</string>
+    <string name="disable_admin">Zakázat Správce Zařízení</string>
+    <string name="lock_device">Zamknout Nyní</string>
+    <string name="wipe_data">Vymazat Data (Nouzové)</string>
+    <string name="status_active">Stav Systému: AKTIVNÍ</string>
+    <string name="status_inactive">Stav Systému: NEAKTIVNÍ</string>
+    <string name="attribution">od Danijel Zalac 2026</string>
+    <string name="security_features_title">Bezpečnostní Protokoly</string>
+    <string name="feature_failed_attempts">Neúspěšné Pokusy: %1$d / %2$d</string>
+    <string name="reset_counter">Resetovat Počitadlo</string>
+
+    <!-- Enhanced Descriptions -->
+    <string name="description_lock">OKAMŽITÉ ZAMČENÍ: Zamkne obrazovku a aktivuje protokoly. Rychle zabezpečí zařízení.</string>
+    <string name="description_wipe">NOUZOVÁ DESTRUKCE DAT: Tovární nastavení pro trvalé vymazání všech dat. Nevratné.</string>
+    <string name="description_monitor">AKTIVNÍ DOHLED: Monitoruje pokusy o odemčení. Při překročení limitu aktivuje automatické vymazání.</string>
+
+    <!-- New Settings Strings with Better Descriptions -->
+    <string name="setting_usb_wipe_title">Obrana USB Portu</string>
+    <string name="setting_usb_wipe_desc">ANTI-FORENZNÍ: Aktivuje vymazání při detekci USB datového připojení na zamčeném zařízení.</string>
+    <string name="setting_max_attempts_title">Limit Hrubé Síly</string>
+    <string name="setting_max_attempts_desc">PRÁH NARUŠENÍ: Max. počet chybných hesel před sebedestrukcí (vymazáním).</string>
+    <string name="save_settings">Uložit Konfiguraci</string>
+    <string name="settings_saved">Konfigurace Aktualizována</string>
+    <string name="warning_usb_wipe">VAROVÁNÍ: Nabíjení zamčeného telefonu může spustit vymazání, pokud nabíječka vyžaduje data!</string>
+
+    <!-- Battery Optimization -->
+    <string name="battery_opt_warning_title">Varování Baterie</string>
+    <string name="battery_opt_warning_msg">Pro funkčnost 'Vymazání při Nečinnosti' MUSÍTE vypnout optimalizaci baterie pro tuto aplikaci.</string>
+    <string name="battery_opt_fix_now">Opravit Nyní</string>
+    <string name="battery_opt_later">Později</string>
+    <string name="battery_opt_toast_error">Nelze otevřít nastavení. Vypněte ručně.</string>
+    <string name="battery_opt_button">Vypnout Opt. Baterie</string>
+
+    <!-- Validation -->
+    <string name="error_min_attempts">Min 3 pokusy vyžadovány</string>
+    <string name="error_invalid_attempts">Neplatné číslo</string>
+    <string name="error_negative_hours">Hodiny nemohou být záporné</string>
+    <string name="error_invalid_hours">Neplatné hodiny nečinnosti</string>
+    <string name="disclaimer_title">Právní Upozornění & Bezpečnost</string>
+    <string name="disclaimer_msg">Tato aplikace může TRVALE VYMAZAT všechna data.\n\n1. Přijímáte plnou odpovědnost za ztrátu dat.\n2. Vývojář NENÍ odpovědný za náhodné vymazání.\n3. Pro funkčnost při VYPNUTÉM telefonu MUSÍTE naplánovat \'Auto Zapnutí\' v nastavení.\n\nPřijímáte tato rizika?</string>
+    <string name="accept_risk">PŘIJÍMÁM</string>
+    <string name="decline_risk">ZRUŠIT</string>
+
+    <!-- Admin Messages -->
+    <string name="msg_device_locked">Zařízení Zamčeno</string>
+    <string name="msg_enable_admin_first">Nejprve povolte Správce Zařízení</string>
+    <string name="msg_counter_reset">Počitadlo Resetováno</string>
+    <string name="title_emergency_wipe">Nouzové Vymazání</string>
+    <string name="msg_wipe_confirm">VAROVÁNÍ: Tovární nastavení vymaže vše. Nevratné.\n\nPoznámka: Android 10+ vyžaduje práva Vlastníka Zařízení.</string>
+    <string name="device_owner_warning">VAROVÁNÍ: Na Android 10+ musí být aplikace Vlastníkem Zařízení. ADB Příkaz: adb shell dpm set-device-owner com.danijelzalac.teslaphoneguardpro/.AdminReceiver</string>
+</resources>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Tesla Phone Guard Pro</string>
+    <string name="admin_label">Tesla Guard Admin</string>
+    <string name="admin_description">Potrebno za hitno zaključavanje, brisanje podataka i praćenje bezbednosnih pokušaja.</string>
+    <string name="enable_admin">Omogući Administratora</string>
+    <string name="disable_admin">Onemogući Administratora</string>
+    <string name="lock_device">Zaključaj Odmah</string>
+    <string name="wipe_data">Obriši Podatke (Hitno)</string>
+    <string name="status_active">Status Sistema: NAORUŽAN</string>
+    <string name="status_inactive">Status Sistema: RAZORUŽAN</string>
+    <string name="attribution">autor Danijel Zalac 2026</string>
+    <string name="security_features_title">Bezbednosni Protokoli</string>
+    <string name="feature_failed_attempts">Neuspešni Pokušaji: %1$d / %2$d</string>
+    <string name="reset_counter">Resetuj Brojač</string>
+
+    <!-- Enhanced Descriptions -->
+    <string name="description_lock">TRENUTNO ZAKLJUČAVANJE: Zaključava ekran i aktivira protokole. Brzo osigurajte uređaj od pretnji.</string>
+    <string name="description_wipe">HITNO UNIŠTAVANJE PODATAKA: Fabričko resetovanje za trajno brisanje svih podataka. Nepovratno.</string>
+    <string name="description_monitor">AKTIVNI NADZOR: Prati pokušaje otključavanja. Ako se limit pređe, aktivira se automatsko brisanje.</string>
+
+    <!-- New Settings Strings with Better Descriptions -->
+    <string name="setting_usb_wipe_title">Odbrana USB Porta</string>
+    <string name="setting_usb_wipe_desc">ANTI-FORENZIKA: Aktivira brisanje ako se detektuje USB prenos podataka dok je uređaj zaključan.</string>
+    <string name="setting_max_attempts_title">Brute Force Limit</string>
+    <string name="setting_max_attempts_desc">PRAG UPADA: Maks. broj pogrešnih lozinki pre samouništenja (brisanja).</string>
+    <string name="save_settings">Sačuvaj Konfiguraciju</string>
+    <string name="settings_saved">Konfiguracija Ažurirana</string>
+    <string name="warning_usb_wipe">UPOZORENJE: Punjenje zaključanog telefona može aktivirati brisanje ako punjač traži podatke!</string>
+
+    <!-- Battery Optimization -->
+    <string name="battery_opt_warning_title">Upozorenje Baterije</string>
+    <string name="battery_opt_warning_msg">Za pouzdano 'Brisanje pri Neaktivnosti' MORATE isključiti optimizaciju baterije za ovu aplikaciju, inače sistem može ugasiti tajmer.</string>
+    <string name="battery_opt_fix_now">Reši Sada</string>
+    <string name="battery_opt_later">Kasnije</string>
+    <string name="battery_opt_toast_error">Ne mogu otvoriti podešavanja. Isključite ručno.</string>
+    <string name="battery_opt_button">Isključi Optimizaciju Baterije</string>
+
+    <!-- Validation -->
+    <string name="error_min_attempts">Min 3 pokušaja potrebna</string>
+    <string name="error_invalid_attempts">Nevažeći broj</string>
+    <string name="error_negative_hours">Sati ne mogu biti negativni</string>
+    <string name="error_invalid_hours">Nevažeći sati neaktivnosti</string>
+    <string name="disclaimer_title">Pravno Odricanje & Bezbednost</string>
+    <string name="disclaimer_msg">Ova aplikacija može TRAJNO OBRISATI sve podatke na uređaju.\n\n1. Omogućavanjem ovih opcija prihvatate punu odgovornost za gubitak podataka.\n2. Autor NIJE odgovoran za slučajno brisanje.\n3. Za rad 'Brisanja pri Neaktivnosti' dok je telefon UGAŠEN, MORATE podesiti 'Planirano uključivanje' u sistemskim opcijama.\n\nDa li prihvatate rizike?</string>
+    <string name="accept_risk">PRIHVATAM</string>
+    <string name="decline_risk">ODUSTANI</string>
+
+    <!-- Admin Messages -->
+    <string name="msg_device_locked">Uređaj Zaključan</string>
+    <string name="msg_enable_admin_first">Prvo omogućite Administratora Uređaja</string>
+    <string name="msg_counter_reset">Brojač Resetovan</string>
+    <string name="title_emergency_wipe">Hitno Brisanje</string>
+    <string name="msg_wipe_confirm">UPOZORENJE: Ovo briše SVE podatke. Nepovratno.\n\nNapomena: Android 10+ zahteva Device Owner privilegije.</string>
+    <string name="device_owner_warning">UPOZORENJE: Na Android 10+ aplikacija mora biti Device Owner. ADB Komanda: adb shell dpm set-device-owner com.danijelzalac.teslaphoneguardpro/.AdminReceiver</string>
+</resources>

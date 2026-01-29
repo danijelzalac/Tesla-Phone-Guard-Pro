@@ -132,6 +132,29 @@ class MainActivity : AppCompatActivity() {
         val maxAttemptsStr = etMaxAttempts.text.toString()
         val inactivityStr = etInactivityHours.text.toString()
         
+        // Show Disclaimer if enabling dangerous features
+        val hours = inactivityStr.toIntOrNull() ?: 0
+        if (hours > 0 || switchUsbWipe.isChecked) {
+            showDisclaimerDialog {
+                // Proceed with saving if accepted
+                performSave(maxAttemptsStr, inactivityStr)
+            }
+        } else {
+            performSave(maxAttemptsStr, inactivityStr)
+        }
+    }
+
+    private fun showDisclaimerDialog(onAccept: () -> Unit) {
+        AlertDialog.Builder(this)
+            .setTitle(R.string.disclaimer_title)
+            .setMessage(R.string.disclaimer_msg)
+            .setPositiveButton(R.string.accept_risk) { _, _ -> onAccept() }
+            .setNegativeButton(R.string.decline_risk, null)
+            .setCancelable(false)
+            .show()
+    }
+
+    private fun performSave(maxAttemptsStr: String, inactivityStr: String) {
         if (maxAttemptsStr.isNotEmpty()) {
             try {
                 val attempts = maxAttemptsStr.toInt()
@@ -155,7 +178,7 @@ class MainActivity : AppCompatActivity() {
                 }
                 prefs.inactivityHours = hours
                 prefs.lastUnlockTimestamp = System.currentTimeMillis() // Reset timer
-                scheduleInactivityCheck(hours)
+                SecurityManager.rescheduleInactivityAlarm(this)
             } catch (e: NumberFormatException) {
                 Toast.makeText(this, R.string.error_invalid_hours, Toast.LENGTH_SHORT).show()
                 return
@@ -165,28 +188,6 @@ class MainActivity : AppCompatActivity() {
         prefs.wipeOnUsb = switchUsbWipe.isChecked
         Toast.makeText(this, getString(R.string.settings_saved), Toast.LENGTH_SHORT).show()
         updateUI()
-    }
-
-    private fun scheduleInactivityCheck(hours: Int) {
-        val alarmManager = getSystemService(Context.ALARM_SERVICE) as AlarmManager
-        val intent = Intent(this, InactivityReceiver::class.java)
-        val pendingIntent = PendingIntent.getBroadcast(
-            this, 
-            0, 
-            intent, 
-            PendingIntent.FLAG_UPDATE_CURRENT or PendingIntent.FLAG_IMMUTABLE
-        )
-
-        if (hours > 0) {
-            // Optimized: Schedule single exact alarm instead of polling
-            val limitMillis = hours * 60 * 60 * 1000L
-            val triggerTime = System.currentTimeMillis() + limitMillis
-            
-            // Use setExactAndAllowWhileIdle for Dead Man's Switch reliability even in Doze mode
-            alarmManager.setExactAndAllowWhileIdle(AlarmManager.RTC_WAKEUP, triggerTime, pendingIntent)
-        } else {
-            alarmManager.cancel(pendingIntent)
-        }
     }
 
     private fun setupListeners() {
@@ -204,6 +205,15 @@ class MainActivity : AppCompatActivity() {
                 showWipeConfirmation()
             } else {
                 showEnableAdminMessage()
+            }
+        }
+
+        tvAttribution.setOnClickListener {
+            try {
+                val browserIntent = Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/danijelzalac"))
+                startActivity(browserIntent)
+            } catch (e: Exception) {
+                Toast.makeText(this, "Could not open link", Toast.LENGTH_SHORT).show()
             }
         }
         
@@ -273,7 +283,7 @@ class MainActivity : AppCompatActivity() {
     private fun performWipe() {
         try {
             // Flags: 0 or WIPE_EXTERNAL_STORAGE
-            devicePolicyManager.wipeData(0)
+            devicePolicyManager.wipeData(DevicePolicyManager.WIPE_EXTERNAL_STORAGE)
         } catch (e: SecurityException) {
             Toast.makeText(this, "Error: App is not Device Owner. Cannot wipe data on this Android version.", Toast.LENGTH_LONG).show()
         } catch (e: Exception) {

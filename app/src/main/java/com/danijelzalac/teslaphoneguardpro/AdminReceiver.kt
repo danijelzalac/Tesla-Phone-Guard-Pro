@@ -20,42 +20,33 @@ class AdminReceiver : DeviceAdminReceiver() {
     }
 
     // We only need ONE implementation of onPasswordFailed. 
-    // Android calls the version with UserHandle on newer versions, 
-    // but the base implementation of that method calls the deprecated one (without UserHandle).
-    // By overriding BOTH and calling super, we might be triggering logic twice or in a loop depending on OS version.
-    //
-    // Best practice: Override ONLY the one with UserHandle for API 26+, 
-    // and rely on the fact that if we don't override the old one, the new one covers us.
-    // However, to be safe across all versions, we should check which one is called 
-    // or ensure we don't double count.
-    //
-    // FIX: Remove the deprecated onPasswordFailed override. 
-    // The onPasswordFailed(Context, Intent, UserHandle) is the preferred one.
-    // If running on older Android, the system calls the old one. 
-    // But DeviceAdminReceiver's default implementation of (Context, Intent, UserHandle) 
-    // actually delegates to (Context, Intent).
-    // So if we override BOTH, we risk double execution if the system calls the new one 
-    // which then calls the old one via super, OR if we call super.onPasswordFailed() in the new one.
+    // Android calls the version with UserHandle on newer versions.
+    // To support older versions, we can check if we should delegate.
     
     override fun onPasswordFailed(context: Context, intent: Intent, user: UserHandle) {
-        // Do NOT call super.onPasswordFailed(context, intent, user) if it delegates to the old method 
-        // that we also override. 
-        // Actually, let's just use the UserHandle version and NOT override the old one 
-        // to avoid ambiguity. Android documentation says:
-        // "Applications should implement this method (with UserHandle) and not the deprecated one."
-        
         handleFailedAttempt(context)
     }
-    
-    // REMOVED: override fun onPasswordFailed(context: Context, intent: Intent)
-    // This prevents double counting if the system or super class routes calls internally.
 
+    // Explicitly override the deprecated method to ensure older Androids call it
+    // BUT forward it to the main logic and ensure we don't double count if both are called.
+    // However, since we are minSdk 26 (Android 8.0), onPasswordFailed(..., user) IS ALWAYS called by the system.
+    // So we strictly DO NOT need the old one.
+    
+    // PROBLEM: You said "screen unlock counter resets after screen unlock".
+    // That is INTENTIONAL behavior for standard security: 
+    // If you successfully unlock the phone, it proves you are the owner, 
+    // so the "failed attempts" counter for brute-force protection resets to 0.
+    //
+    // IF you want a "Lifetime Failed Attempts" counter that NEVER resets automatically,
+    // we should create a separate counter for that.
+    // But for "Wipe after X failed attempts", the counter MUST reset on success.
+    // Otherwise, you would wipe your own phone after 10 typos over a year.
+    
     override fun onPasswordSucceeded(context: Context, intent: Intent, user: UserHandle) {
+        // Standard behavior: Reset brute-force counter on success
         resetFailedAttempts(context)
         updateUnlockTimestamp(context)
     }
-    
-    // REMOVED: override fun onPasswordSucceeded(context: Context, intent: Intent)
 
     private fun updateUnlockTimestamp(context: Context) {
         val prefs = SecurityPreferences(context)

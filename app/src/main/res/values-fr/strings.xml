@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Tesla Phone Guard Pro</string>
+    <string name="admin_label">Tesla Guard Admin</string>
+    <string name="admin_description">Requis pour le verrouillage d\'urgence, l\'effacement et la surveillance des tentatives de sécurité.</string>
+    <string name="enable_admin">Activer Admin Appareil</string>
+    <string name="disable_admin">Désactiver Admin Appareil</string>
+    <string name="lock_device">Verrouiller maintenant</string>
+    <string name="wipe_data">Effacer Données (Urgence)</string>
+    <string name="status_active">État Système: ARMÉ</string>
+    <string name="status_inactive">État Système: DÉSARMÉ</string>
+    <string name="attribution">par Danijel Zalac 2026</string>
+    <string name="security_features_title">Protocoles de Sécurité</string>
+    <string name="feature_failed_attempts">Tentatives échouées: %1$d / %2$d</string>
+    <string name="reset_counter">Réinitialiser Compteur</string>
+
+    <!-- Enhanced Descriptions -->
+    <string name="description_lock">VERROUILLAGE IMMÉDIAT: Verrouille l\'écran et active les protocoles. Sécurise rapidement votre appareil.</string>
+    <string name="description_wipe">DESTRUCTION D\'URGENCE: Réinitialisation d\'usine pour effacer toutes les données. Irréversible.</string>
+    <string name="description_monitor">SURVEILLANCE ACTIVE: Surveille les déverrouillages. Si limite dépassée, effacement auto activé.</string>
+
+    <!-- New Settings Strings with Better Descriptions -->
+    <string name="setting_usb_wipe_title">Défense Port USB</string>
+    <string name="setting_usb_wipe_desc">ANTI-FORENSIQUE: Déclenche l\'effacement si une connexion données USB est détectée appareil verrouillé.</string>
+    <string name="setting_max_attempts_title">Limite Force Brute</string>
+    <string name="setting_max_attempts_desc">SEUIL D\'INTRUSION: Max tentatives mot de passe incorrect avant autodestruction (effacement).</string>
+    <string name="save_settings">Sauvegarder Config</string>
+    <string name="settings_saved">Configuration mise à jour</string>
+    <string name="warning_usb_wipe">ATTENTION: Charger l\'appareil verrouillé peut déclencher l\'effacement si le chargeur demande des données!</string>
+
+    <!-- Battery Optimization -->
+    <string name="battery_opt_warning_title">Avertissement Batterie</string>
+    <string name="battery_opt_warning_msg">Pour que l\'effacement par inactivité fonctionne, vous DEVEZ désactiver l\'optimisation batterie pour cette appli.</string>
+    <string name="battery_opt_fix_now">Corriger</string>
+    <string name="battery_opt_later">Plus tard</string>
+    <string name="battery_opt_toast_error">Impossible d\'ouvrir les paramètres. Veuillez désactiver manuellement.</string>
+    <string name="battery_opt_button">Désactiver Opt. Batterie</string>
+
+    <!-- Validation -->
+    <string name="error_min_attempts">Min 3 tentatives requises</string>
+    <string name="error_invalid_attempts">Nombre invalide</string>
+    <string name="error_negative_hours">Heures ne peuvent être négatives</string>
+    <string name="error_invalid_hours">Heures inactivité invalides</string>
+    <string name="disclaimer_title">Avis Légal & Sécurité</string>
+    <string name="disclaimer_msg">Cette appli peut EFFACER DÉFINITIVEMENT toutes les données.\n\n1. Vous acceptez la responsabilité de toute perte de données.\n2. Le développeur N\'EST PAS responsable des effacements accidentels.\n3. Pour que l\'effacement fonctionne téléphone ÉTEINT, vous DEVEZ programmer \'Allumage Auto\' dans les paramètres.\n\nAcceptez-vous ces risques?</string>
+    <string name="accept_risk">J\'ACCEPTE</string>
+    <string name="decline_risk">ANNULER</string>
+
+    <!-- Admin Messages -->
+    <string name="msg_device_locked">Appareil Verrouillé</string>
+    <string name="msg_enable_admin_first">Activez d\'abord Admin Appareil</string>
+    <string name="msg_counter_reset">Compteur Réinitialisé</string>
+    <string name="title_emergency_wipe">Effacement Urgence</string>
+    <string name="msg_wipe_confirm">ATTENTION: Réinitialisation d\'usine, efface tout. Irréversible.\n\nNote: Android 10+ requiert droits Propriétaire Appareil.</string>
+    <string name="device_owner_warning">ATTENTION: Sur Android 10+, l\'appli doit être Propriétaire Appareil. Commande ADB: adb shell dpm set-device-owner com.danijelzalac.teslaphoneguardpro/.AdminReceiver</string>
+</resources>

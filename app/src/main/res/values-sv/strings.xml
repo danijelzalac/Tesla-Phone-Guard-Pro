@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Tesla Phone Guard Pro</string>
+    <string name="admin_label">Tesla Guard Admin</string>
+    <string name="admin_description">Krävs för nödlåsning, dataadering och övervakning av säkerhetsförsök.</string>
+    <string name="enable_admin">Aktivera Enhetsadministratör</string>
+    <string name="disable_admin">Inaktivera Enhetsadministratör</string>
+    <string name="lock_device">Lås Nu</string>
+    <string name="wipe_data">Radera Data (Nödläge)</string>
+    <string name="status_active">Systemstatus: ARMERAD</string>
+    <string name="status_inactive">Systemstatus: AVVÄPNAD</string>
+    <string name="attribution">av Danijel Zalac 2026</string>
+    <string name="security_features_title">Säkerhetsprotokoll</string>
+    <string name="feature_failed_attempts">Misslyckade Försök: %1$d / %2$d</string>
+    <string name="reset_counter">Återställ Räknare</string>
+
+    <!-- Enhanced Descriptions -->
+    <string name="description_lock">OMEDELBAR LÅSNING: Låser skärmen och aktiverar protokoll. Säkra din enhet snabbt.</string>
+    <string name="description_wipe">NÖDDESTRUKTION AV DATA: Fabriksåterställning för att permanent radera all data. Oåterkalleligt.</string>
+    <string name="description_monitor">AKTIV ÖVERVAKNING: Övervakar upplåsningsförsök. Om gränsen överskrids aktiveras automatisk radering.</string>
+
+    <!-- New Settings Strings with Better Descriptions -->
+    <string name="setting_usb_wipe_title">USB-Port Försvar</string>
+    <string name="setting_usb_wipe_desc">ANTI-FORENSIK: Aktiverar radering om USB-dataanslutning upptäcks vid låst enhet.</string>
+    <string name="setting_max_attempts_title">Brute Force Gräns</string>
+    <string name="setting_max_attempts_desc">INTRÅNGSTRÖSKEL: Max antal felaktiga lösenord innan självdestruktion (wipe).</string>
+    <string name="save_settings">Spara Konfiguration</string>
+    <string name="settings_saved">Konfiguration Uppdaterad</string>
+    <string name="warning_usb_wipe">VARNING: Att ladda låst telefon kan utlösa radering om laddaren begär data!</string>
+
+    <!-- Battery Optimization -->
+    <string name="battery_opt_warning_title">Varning Batterioptimering</string>
+    <string name="battery_opt_warning_msg">För att 'Radering vid Inaktivitet' ska fungera MÅSTE du inaktivera batterioptimering för denna app.</string>
+    <string name="battery_opt_fix_now">Åtgärda Nu</string>
+    <string name="battery_opt_later">Senare</string>
+    <string name="battery_opt_toast_error">Kunde inte öppna inställningar. Inaktivera manuellt.</string>
+    <string name="battery_opt_button">Inaktivera Batterioptimering</string>
+
+    <!-- Validation -->
+    <string name="error_min_attempts">Minst 3 försök krävs</string>
+    <string name="error_invalid_attempts">Ogiltigt antal</string>
+    <string name="error_negative_hours">Timmar kan inte vara negativa</string>
+    <string name="error_invalid_hours">Ogiltiga inaktivitetstimmar</string>
+    <string name="disclaimer_title">Juridisk Ansvarsfriskrivning & Säkerhet</string>
+    <string name="disclaimer_msg">Denna app kan PERMANENT RADERA all data.\n\n1. Du accepterar fullt ansvar för dataförlust.\n2. Utvecklaren ansvarar INTE för oavsiktlig radering.\n3. För att fungera när telefonen är AVSTÄNGD MÅSTE du schemalägga \'Auto Start\' i inställningarna.\n\nAccepterar du dessa risker?</string>
+    <string name="accept_risk">JAG ACCEPTERAR</string>
+    <string name="decline_risk">AVBRYT</string>
+
+    <!-- Admin Messages -->
+    <string name="msg_device_locked">Enhet Låst</string>
+    <string name="msg_enable_admin_first">Aktivera Enhetsadministratör först</string>
+    <string name="msg_counter_reset">Räknare Återställd</string>
+    <string name="title_emergency_wipe">Nödradering</string>
+    <string name="msg_wipe_confirm">VARNING: Fabriksåterställning raderar allt. Oåterkalleligt.\n\nObs: Android 10+ kräver Device Owner-rättigheter.</string>
+    <string name="device_owner_warning">VARNING: På Android 10+ måste appen vara Device Owner. ADB Kommando: adb shell dpm set-device-owner com.danijelzalac.teslaphoneguardpro/.AdminReceiver</string>
+</resources>

@@ -8,6 +8,10 @@
         
         <item name="android:windowBackground">@color/black</item>
         <item name="android:textColor">@color/gold</item>
+        
+        <!-- Define switch colors globally if individual styling fails -->
+        <item name="colorControlActivated">@color/gold</item>
+        <item name="android:colorForeground">@color/gold</item>
     </style>
 
     <style name="Theme.TeslaPhoneGuardPro" parent="Base.Theme.TeslaPhoneGuardPro" />

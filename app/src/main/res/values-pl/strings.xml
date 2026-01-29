@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Tesla Phone Guard Pro</string>
+    <string name="admin_label">Tesla Guard Admin</string>
+    <string name="admin_description">Wymagane do blokady awaryjnej, czyszczenia danych i monitorowania prób bezpieczeństwa.</string>
+    <string name="enable_admin">Włącz Admina Urządzenia</string>
+    <string name="disable_admin">Wyłącz Admina Urządzenia</string>
+    <string name="lock_device">Zablokuj Teraz</string>
+    <string name="wipe_data">Wyczyść Dane (Awaria)</string>
+    <string name="status_active">Stan Systemu: UZBROJONY</string>
+    <string name="status_inactive">Stan Systemu: ROZBROJONY</string>
+    <string name="attribution">przez Danijel Zalac 2026</string>
+    <string name="security_features_title">Protokoły Bezpieczeństwa</string>
+    <string name="feature_failed_attempts">Nieudane Próby: %1$d / %2$d</string>
+    <string name="reset_counter">Resetuj Licznik</string>
+
+    <!-- Enhanced Descriptions -->
+    <string name="description_lock">NATYCHMIASTOWA BLOKADA: Blokuje ekran i aktywuje protokoły. Szybko zabezpiecza urządzenie.</string>
+    <string name="description_wipe">AWARYJNE NISZCZENIE DANYCH: Przywrócenie ustawień fabrycznych w celu trwałego usunięcia wszystkich danych. Nieodwracalne.</string>
+    <string name="description_monitor">AKTYWNY NADZÓR: Monitoruje próby odblokowania. Po przekroczeniu limitu aktywuje autoczyszczenie.</string>
+
+    <!-- New Settings Strings with Better Descriptions -->
+    <string name="setting_usb_wipe_title">Obrona Portu USB</string>
+    <string name="setting_usb_wipe_desc">ANTY-FORENSIKA: Aktywuje czyszczenie po wykryciu transmisji danych USB przy zablokowanym urządzeniu.</string>
+    <string name="setting_max_attempts_title">Limit Brute Force</string>
+    <string name="setting_max_attempts_desc">PRÓG WŁAMANIA: Maks. liczba błędnych haseł przed samozniszczeniem (wipe).</string>
+    <string name="save_settings">Zapisz Konfigurację</string>
+    <string name="settings_saved">Konfiguracja Zaktualizowana</string>
+    <string name="warning_usb_wipe">OSTRZEŻENIE: Ładowanie zablokowanego telefonu może wywołać czyszczenie, jeśli ładowarka żąda danych!</string>
+
+    <!-- Battery Optimization -->
+    <string name="battery_opt_warning_title">Ostrzeżenie Opt. Baterii</string>
+    <string name="battery_opt_warning_msg">Aby 'Czyszczenie przy braku aktywności' działało, MUSISZ wyłączyć optymalizację baterii dla tej aplikacji, inaczej system zatrzyma licznik.</string>
+    <string name="battery_opt_fix_now">Napraw</string>
+    <string name="battery_opt_later">Później</string>
+    <string name="battery_opt_toast_error">Nie można otworzyć ustawień. Wyłącz ręcznie.</string>
+    <string name="battery_opt_button">Wyłącz Opt. Baterii</string>
+
+    <!-- Validation -->
+    <string name="error_min_attempts">Min 3 próby wymagane</string>
+    <string name="error_invalid_attempts">Nieprawidłowa liczba</string>
+    <string name="error_negative_hours">Godziny nie mogą być ujemne</string>
+    <string name="error_invalid_hours">Nieprawidłowe godziny</string>
+    <string name="disclaimer_title">Nota Prawna & Bezpieczeństwo</string>
+    <string name="disclaimer_msg">Ta aplikacja może TRWALE USUNĄĆ wszystkie dane.\n\n1. Akceptujesz pełną odpowiedzialność za utratę danych.\n2. Deweloper NIE odpowiada za przypadkowe usunięcie.\n3. Aby działało przy WYŁĄCZONYM telefonie, MUSISZ zaplanować \'Auto Włączanie\' w ustawieniach.\n\nAkceptujesz ryzyko?</string>
+    <string name="accept_risk">AKCEPTUJĘ</string>
+    <string name="decline_risk">ANULUJ</string>
+
+    <!-- Admin Messages -->
+    <string name="msg_device_locked">Urządzenie Zablokowane</string>
+    <string name="msg_enable_admin_first">Najpierw włącz Admina Urządzenia</string>
+    <string name="msg_counter_reset">Licznik Zresetowany</string>
+    <string name="title_emergency_wipe">Awaryjne Czyszczenie</string>
+    <string name="msg_wipe_confirm">OSTRZEŻENIE: Reset fabryczny usuwa wszystko. Nieodwracalne.\n\nUwaga: Android 10+ wymaga uprawnień Właściciela Urządzenia.</string>
+    <string name="device_owner_warning">OSTRZEŻENIE: Na Android 10+ aplikacja musi być Właścicielem Urządzenia. Komenda ADB: adb shell dpm set-device-owner com.danijelzalac.teslaphoneguardpro/.AdminReceiver</string>
+</resources>
