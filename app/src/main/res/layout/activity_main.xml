@@ -172,6 +172,19 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@id/tvInactivityTitle"/>
 
+        <Button
+            android:id="@+id/btnPowerOnGuide"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/btn_power_on_guide"
+            android:textColor="@color/gold"
+            android:backgroundTint="@color/dark_grey"
+            app:strokeColor="@color/gold"
+            app:strokeWidth="1dp"
+            android:textSize="12sp"
+            app:layout_constraintTop_toBottomOf="@id/etInactivityHours"/>
+
         <!-- USB Wipe Config -->
         <androidx.appcompat.widget.SwitchCompat
             android:id="@+id/switchUsbWipe"
@@ -179,12 +192,12 @@
             android:layout_height="wrap_content"
             android:text="@string/setting_usb_wipe_title"
             android:textColor="@color/white"
-            android:layout_marginTop="24dp"
+            android:layout_marginTop="16dp"
             app:thumbTint="@color/gold"
             app:trackTint="@color/gray"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toStartOf="@id/tvUsbStatus"
-            app:layout_constraintTop_toBottomOf="@id/etInactivityHours"/>
+            app:layout_constraintTop_toBottomOf="@id/btnPowerOnGuide"/>
 
         <TextView
             android:id="@+id/tvUsbStatus"

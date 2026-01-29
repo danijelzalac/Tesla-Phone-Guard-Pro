@@ -43,6 +43,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var tvUsbStatus: TextView
     private lateinit var spinnerLanguage: Spinner
     private lateinit var btnSaveSettings: Button
+    private lateinit var btnPowerOnGuide: Button
 
     private lateinit var prefs: SecurityPreferences
 
@@ -73,6 +74,7 @@ class MainActivity : AppCompatActivity() {
         tvUsbStatus = findViewById(R.id.tvUsbStatus)
         spinnerLanguage = findViewById(R.id.spinnerLanguage)
         btnSaveSettings = findViewById(R.id.btnSaveSettings)
+        btnPowerOnGuide = findViewById(R.id.btnPowerOnGuide)
 
         setupLanguageSpinner()
         setupListeners()
@@ -270,6 +272,21 @@ class MainActivity : AppCompatActivity() {
         updateUI()
     }
 
+    private fun showPowerOnGuide() {
+        AlertDialog.Builder(this)
+            .setTitle(R.string.title_scheduled_power_on)
+            .setMessage(R.string.msg_scheduled_power_on)
+            .setPositiveButton(R.string.btn_open_power_settings) { _, _ ->
+                try {
+                    startActivity(Intent(Settings.ACTION_SETTINGS))
+                } catch (e: Exception) {
+                    Toast.makeText(this, "Could not open settings directly", Toast.LENGTH_SHORT).show()
+                }
+            }
+            .setNegativeButton("Cancel", null)
+            .show()
+    }
+
     private fun setupListeners() {
         btnLock.setOnClickListener {
             if (isActiveAdmin()) {
@@ -299,6 +316,10 @@ class MainActivity : AppCompatActivity() {
         
         switchUsbWipe.setOnCheckedChangeListener { _, isChecked ->
             updateUsbStatusUI(isChecked)
+        }
+        
+        btnPowerOnGuide.setOnClickListener {
+            showPowerOnGuide()
         }
 
         btnSaveSettings.setOnClickListener {
