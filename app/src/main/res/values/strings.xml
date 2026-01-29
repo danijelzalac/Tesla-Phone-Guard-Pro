@@ -58,5 +58,12 @@
     <string name="msg_scheduled_power_on">To ensure the \'Dead Man\'s Switch\' works even if your phone is OFF, you must enable \'Scheduled Power On\'.\n\n1. Tap \'Open Settings\' below.\n2. Look for \'Scheduled Power On/Off\' or \'Auto Power On\'.\n3. Set a daily time (e.g., 03:00 AM) for the phone to turn itself on.</string>
     <string name="btn_open_power_settings">Configure Auto Power On</string>
     <string name="btn_power_on_guide">How to Setup Auto Power On?</string>
-    <string name="device_owner_warning">WARNING: On Android 10+, this app must be set as Device Owner to wipe data automatically. ADB command required: adb shell dpm set-device-owner com.danijelzalac.teslaphoneguardpro/.AdminReceiver</string>
+    <string name="config_auto_defense_title">Automatic Defense Configuration</string>
+    <string name="config_inactivity_title">Inactivity Wipe (Dead Man\'s Switch)</string>
+    <string name="config_inactivity_desc">Wipe data if not unlocked for X hours (0 to disable)</string>
+    <string name="config_manual_title">Manual Controls</string>
+    <string name="wipe_countdown_title">EMERGENCY WIPE INITIATED</string>
+    <string name="wipe_countdown_msg">Data destruction in: %d seconds</string>
+    <string name="wipe_abort">ABORT / CANCEL</string>
+    <string name="wipe_now">WIPE NOW</string>
 </resources>

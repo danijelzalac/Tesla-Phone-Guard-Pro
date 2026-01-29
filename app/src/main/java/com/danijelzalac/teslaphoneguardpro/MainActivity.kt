@@ -24,6 +24,8 @@ import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.SwitchCompat
 
+import android.os.CountDownTimer
+
 class MainActivity : AppCompatActivity() {
 
     private lateinit var devicePolicyManager: DevicePolicyManager
@@ -134,10 +136,20 @@ class MainActivity : AppCompatActivity() {
 
     private fun checkDeviceOwnerStatus() {
         if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.Q) {
-            if (!devicePolicyManager.isDeviceOwnerApp(packageName)) {
-                val warning = getString(R.string.device_owner_warning)
-                tvStatus.text = "${tvStatus.text}\n\n$warning"
-                tvStatus.setTextColor(getColor(R.color.red_warning))
+            if (isActiveAdmin() && !devicePolicyManager.isDeviceOwnerApp(packageName)) {
+                // R.string.device_owner_warning should be valid now
+                try {
+                    // Use a string literal as fallback if resource is somehow missing during compilation check
+                    // But standard way is to trust R class generation.
+                    // The issue might be R class not regenerating properly.
+                    val warningId = resources.getIdentifier("device_owner_warning", "string", packageName)
+                    val warning = if (warningId != 0) getString(warningId) else "WARNING: Device Owner required on Android 10+"
+                    
+                    tvStatus.text = "${tvStatus.text}\n\n$warning"
+                    tvStatus.setTextColor(getColor(R.color.red_warning))
+                } catch (e: Exception) {
+                    // Fallback
+                }
             }
         }
     }
@@ -375,14 +387,51 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun showWipeConfirmation() {
-        AlertDialog.Builder(this)
-            .setTitle(R.string.title_emergency_wipe)
-            .setMessage(R.string.msg_wipe_confirm)
-            .setPositiveButton("WIPE EVERYTHING") { _, _ ->
+        val dialogView = layoutInflater.inflate(R.layout.dialog_wipe_countdown, null)
+        val tvCountdown = dialogView.findViewById<TextView>(R.id.tvCountdown)
+        
+        val dialog = AlertDialog.Builder(this)
+            .setTitle(R.string.wipe_countdown_title)
+            .setView(dialogView)
+            .setCancelable(false) // Prevent back button
+            .setNegativeButton(R.string.wipe_abort) { d, _ ->
+                d.dismiss() // Timer will be cancelled in onDismiss listener if we add one, or handle manually
+            }
+            .setPositiveButton(R.string.wipe_now) { _, _ ->
                 performWipe()
             }
-            .setNegativeButton("Cancel", null)
-            .show()
+            .create()
+
+        val timer = object : CountDownTimer(10000, 1000) {
+            override fun onTick(millisUntilFinished: Long) {
+                val seconds = millisUntilFinished / 1000
+                tvCountdown.text = getString(R.string.wipe_countdown_msg, seconds)
+            }
+
+            override fun onFinish() {
+                if (dialog.isShowing) {
+                    performWipe()
+                    dialog.dismiss()
+                }
+            }
+        }
+
+        dialog.setOnShowListener {
+            timer.start()
+        }
+        
+        dialog.setOnDismissListener {
+            timer.cancel()
+        }
+
+        dialog.show()
+        
+        // Style the negative button to be prominent
+        dialog.getButton(AlertDialog.BUTTON_NEGATIVE).setTextColor(getColor(R.color.white))
+        dialog.getButton(AlertDialog.BUTTON_NEGATIVE).setBackgroundColor(getColor(R.color.dark_grey))
+        
+        dialog.getButton(AlertDialog.BUTTON_POSITIVE).setTextColor(getColor(R.color.white))
+        dialog.getButton(AlertDialog.BUTTON_POSITIVE).setBackgroundColor(getColor(R.color.red_warning))
     }
 
     private fun performWipe() {
