@@ -8,9 +8,9 @@
 
 ## 📸 Screenshots
 <p align="center">
-  <img src="https://i.ibb.co/gW6x9Xh/Screenshot-2025-01-29-02-09-46-993-com-danijelzalac-teslaphoneguardpro.jpg" width="30%" alt="Main Screen"/>
-  <img src="https://i.ibb.co/LtbY15y/Screenshot-2025-01-29-02-09-53-433-com-danijelzalac-teslaphoneguardpro.jpg" width="30%" alt="Configuration"/>
-  <img src="https://i.ibb.co/68z4k0h/Screenshot-2025-01-29-02-09-58-005-com-danijelzalac-teslaphoneguardpro.jpg" width="30%" alt="Emergency Wipe"/>
+  <img src="https://i.ibb.co/CzcY5bC/Screenshot-2025-01-29-06-42-05-329-com-danijelzalac-teslaphoneguardpro.jpg" width="30%" alt="Main Screen"/>
+  <img src="https://i.ibb.co/wJgXyXj/Screenshot-2025-01-29-06-43-08-984-com-danijelzalac-teslaphoneguardpro.jpg" width="30%" alt="Configuration"/>
+  <img src="https://i.ibb.co/hK8bQfR/Screenshot-2025-01-29-06-43-16-160-com-danijelzalac-teslaphoneguardpro.jpg" width="30%" alt="Emergency Wipe"/>
 </p>
 
 ## 🚨 Core Defense Features
