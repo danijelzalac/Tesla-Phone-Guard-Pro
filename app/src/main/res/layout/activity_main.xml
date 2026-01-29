@@ -12,6 +12,16 @@
         android:layout_height="wrap_content"
         android:padding="16dp">
 
+        <!-- Language Selector -->
+        <Spinner
+            android:id="@+id/spinnerLanguage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/gold"
+            android:minHeight="48dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
         <TextView
             android:id="@+id/tvTitle"
             android:layout_width="wrap_content"
@@ -20,17 +30,17 @@
             android:textColor="@color/gold"
             android:textSize="24sp"
             android:textStyle="bold"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="8dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toBottomOf="@id/spinnerLanguage" />
 
         <TextView
             android:id="@+id/tvAttribution"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/attribution"
-            android:textColor="@color/gold_dark"
+            android:textColor="#4287f5"
             android:textSize="14sp"
             android:clickable="true"
             android:focusable="true"
@@ -165,14 +175,28 @@
         <!-- USB Wipe Config -->
         <androidx.appcompat.widget.SwitchCompat
             android:id="@+id/switchUsbWipe"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="@string/setting_usb_wipe_title"
             android:textColor="@color/white"
             android:layout_marginTop="24dp"
             app:thumbTint="@color/gold"
             app:trackTint="@color/gray"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/tvUsbStatus"
             app:layout_constraintTop_toBottomOf="@id/etInactivityHours"/>
+
+        <TextView
+            android:id="@+id/tvUsbStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/usb_status_disarmed"
+            android:textColor="@color/gray"
+            android:textStyle="bold"
+            android:layout_marginStart="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/switchUsbWipe"
+            app:layout_constraintBottom_toBottomOf="@id/switchUsbWipe"/>
 
         <TextView
             android:id="@+id/tvUsbWipeDesc"

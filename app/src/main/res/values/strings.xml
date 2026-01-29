@@ -8,6 +8,9 @@
     <string name="wipe_data">Wipe Data (Emergency)</string>
     <string name="status_active">System Status: ARMED</string>
     <string name="status_inactive">System Status: DISARMED</string>
+    <string name="usb_status_armed">ARMED</string>
+    <string name="usb_status_disarmed">OFF</string>
+    <string name="language_selector_title">App Language</string>
     <string name="attribution">by Danijel Zalac 2026</string>
     <string name="security_features_title">Security Protocols</string>
     <string name="feature_failed_attempts">Failed Attempts: %1$d / %2$d</string>
@@ -21,8 +24,8 @@
     <!-- New Settings Strings with Better Descriptions -->
     <string name="setting_usb_wipe_title">USB Port Defense</string>
     <string name="setting_usb_wipe_desc">ANTI-FORENSIC PROTECTION: Automatically triggers a data wipe if a USB data connection is detected while the device is locked. This prevents forensic tools from extracting data.</string>
-    <string name="setting_max_attempts_title">Brute Force Limit</string>
-    <string name="setting_max_attempts_desc">INTRUSION THRESHOLD: Sets the maximum number of incorrect password attempts allowed before the device assumes a brute-force attack and self-destructs (wipes data).</string>
+    <string name="setting_max_attempts_title">Brute Force / Duress Limit</string>
+    <string name="setting_max_attempts_desc">INTRUSION THRESHOLD: Sets the maximum number of incorrect password attempts.\n\nDURESS PROTOCOL: If forced to unlock, intentionally enter WRONG password this many times to trigger a wipe.</string>
     <string name="save_settings">Save Configuration</string>
     <string name="settings_saved">Security Configuration Updated</string>
     <string name="warning_usb_wipe">WARNING: Charging your phone while locked might trigger a wipe if the charger requests data!</string>

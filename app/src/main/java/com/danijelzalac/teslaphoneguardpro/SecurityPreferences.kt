@@ -10,12 +10,19 @@ class SecurityPreferences(context: Context) {
     private val prefs: SharedPreferences
 
     init {
-        val masterKey = MasterKey.Builder(context)
+        // Use Device Protected Storage if available to allow reading prefs before unlock (Direct Boot)
+        val storageContext = if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.N) {
+            context.createDeviceProtectedStorageContext()
+        } else {
+            context
+        }
+
+        val masterKey = MasterKey.Builder(storageContext)
             .setKeyScheme(MasterKey.KeyScheme.AES256_GCM)
             .build()
 
         prefs = EncryptedSharedPreferences.create(
-            context,
+            storageContext,
             "secret_security_prefs",
             masterKey,
             EncryptedSharedPreferences.PrefKeyEncryptionScheme.AES256_SIV,

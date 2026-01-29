@@ -10,10 +10,16 @@ import android.net.Uri
 import android.os.Bundle
 import android.os.PowerManager
 import android.provider.Settings
+import android.view.View
+import android.widget.AdapterView
+import android.widget.ArrayAdapter
 import android.widget.Button
 import android.widget.EditText
+import android.widget.Spinner
 import android.widget.TextView
 import android.widget.Toast
+import android.text.SpannableString
+import android.text.style.UnderlineSpan
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.SwitchCompat
@@ -34,9 +40,15 @@ class MainActivity : AppCompatActivity() {
     private lateinit var etMaxAttempts: EditText
     private lateinit var etInactivityHours: EditText
     private lateinit var switchUsbWipe: SwitchCompat
+    private lateinit var tvUsbStatus: TextView
+    private lateinit var spinnerLanguage: Spinner
     private lateinit var btnSaveSettings: Button
 
     private lateinit var prefs: SecurityPreferences
+
+    override fun attachBaseContext(newBase: Context) {
+        super.attachBaseContext(LocaleHelper.onAttach(newBase))
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -52,17 +64,20 @@ class MainActivity : AppCompatActivity() {
         btnEnableAdmin = findViewById(R.id.btnEnableAdmin)
         btnBatteryOpt = findViewById(R.id.btnBatteryOpt)
         btnLock = findViewById(R.id.btnLock)
-        btnLock = findViewById(R.id.btnLock)
         btnWipe = findViewById(R.id.btnWipe)
         tvFailedAttempts = findViewById(R.id.tvFailedAttempts)
         
         etMaxAttempts = findViewById(R.id.etMaxAttempts)
         etInactivityHours = findViewById(R.id.etInactivityHours)
         switchUsbWipe = findViewById(R.id.switchUsbWipe)
+        tvUsbStatus = findViewById(R.id.tvUsbStatus)
+        spinnerLanguage = findViewById(R.id.spinnerLanguage)
         btnSaveSettings = findViewById(R.id.btnSaveSettings)
 
+        setupLanguageSpinner()
         setupListeners()
         loadSettings()
+        styleAttributionLink()
     }
 
     override fun onResume() {
@@ -125,11 +140,73 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+    private fun styleAttributionLink() {
+        val content = SpannableString(getString(R.string.attribution))
+        content.setSpan(UnderlineSpan(), 0, content.length, 0)
+        tvAttribution.text = content
+    }
+
+    private fun setupLanguageSpinner() {
+        val languages = arrayOf("English", "Srpski", "Deutsch", "Français", "Italiano", "Español", "Hrvatski", "Português", "Čeština", "Polski", "Nederlands", "Svenska")
+        val codes = arrayOf("en", "sr", "de", "fr", "it", "es", "hr", "pt", "cs", "pl", "nl", "sv")
+        
+        val adapter = ArrayAdapter(this, android.R.layout.simple_spinner_item, languages)
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+        spinnerLanguage.adapter = adapter
+
+        // Set current selection
+        val currentLang = LocaleHelper.getLanguage(this)
+        val index = codes.indexOf(currentLang)
+        if (index >= 0) {
+            spinnerLanguage.setSelection(index)
+        }
+
+        spinnerLanguage.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
+            override fun onItemSelected(parent: AdapterView<*>, view: View?, position: Int, id: Long) {
+                val selectedCode = codes[position]
+                if (selectedCode != currentLang) {
+                    LocaleHelper.setLocale(this@MainActivity, selectedCode)
+                    recreate() // Restart activity to apply language
+                }
+            }
+            override fun onNothingSelected(parent: AdapterView<*>) {}
+        }
+    }
+
+    private fun showDuressHelpDialog() {
+        AlertDialog.Builder(this)
+            .setTitle("Duress / Panic Protocol")
+            .setMessage("Android Security prevents apps from creating a specific 'Panic Password' on the lock screen.\n\n" +
+                    "INSTEAD, use the 'Max Attempts' feature:\n\n" +
+                    "1. Set 'Max Failed Attempts' to a low number (e.g., 3).\n" +
+                    "2. If forced to unlock your phone, intentionally type WRONG passwords.\n" +
+                    "3. After the 3rd wrong attempt, the phone will WIPE automatically.")
+            .setPositiveButton("OK", null)
+            .show()
+    }
+
     private fun loadSettings() {
         etMaxAttempts.setText(prefs.maxFailedAttempts.toString())
         etInactivityHours.setText(prefs.inactivityHours.toString())
         switchUsbWipe.isChecked = prefs.wipeOnUsb
+        updateUsbStatusUI(prefs.wipeOnUsb)
+        
+        // Add info icon or click listener to title for help
+        findViewById<TextView>(R.id.tvMaxAttemptsTitle).setOnClickListener {
+            showDuressHelpDialog()
+        }
     }
+
+    private fun updateUsbStatusUI(isEnabled: Boolean) {
+        if (isEnabled) {
+            tvUsbStatus.text = getString(R.string.usb_status_armed)
+            tvUsbStatus.setTextColor(getColor(R.color.red_warning))
+        } else {
+            tvUsbStatus.text = getString(R.string.usb_status_disarmed)
+            tvUsbStatus.setTextColor(getColor(R.color.gray))
+        }
+    }
+
 
     private fun saveSettings() {
         val maxAttemptsStr = etMaxAttempts.text.toString()
@@ -220,6 +297,10 @@ class MainActivity : AppCompatActivity() {
             }
         }
         
+        switchUsbWipe.setOnCheckedChangeListener { _, isChecked ->
+            updateUsbStatusUI(isChecked)
+        }
+
         btnSaveSettings.setOnClickListener {
             saveSettings()
         }

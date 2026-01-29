@@ -30,6 +30,7 @@
 
         <service android:name=".GuardService" android:enabled="true" android:exported="false"
             android:foregroundServiceType="specialUse"
+            android:directBootAware="true"
             tools:ignore="ForegroundServicePermission">
             <property android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE" android:value="Security Monitoring" />
         </service>
@@ -53,11 +54,12 @@
 
         <!-- UsbReceiver registered dynamically in GuardService for better reliability -->
         
-        <receiver android:name=".InactivityReceiver" android:exported="false" />
+        <receiver android:name=".InactivityReceiver" android:exported="false" android:directBootAware="true" />
         
-        <receiver android:name=".BootReceiver" android:exported="true">
+        <receiver android:name=".BootReceiver" android:exported="true" android:directBootAware="true">
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.LOCKED_BOOT_COMPLETED" />
             </intent-filter>
         </receiver>
     </application>
