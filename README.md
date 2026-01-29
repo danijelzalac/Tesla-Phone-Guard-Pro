@@ -6,6 +6,13 @@
 ![Android](https://img.shields.io/badge/Platform-Android%2010%2B-brightgreen)
 ![License](https://img.shields.io/badge/License-MIT-blue)
 
+## 📸 Screenshots
+<p align="center">
+  <img src="https://i.ibb.co/gW6x9Xh/Screenshot-2025-01-29-02-09-46-993-com-danijelzalac-teslaphoneguardpro.jpg" width="30%" alt="Main Screen"/>
+  <img src="https://i.ibb.co/LtbY15y/Screenshot-2025-01-29-02-09-53-433-com-danijelzalac-teslaphoneguardpro.jpg" width="30%" alt="Configuration"/>
+  <img src="https://i.ibb.co/68z4k0h/Screenshot-2025-01-29-02-09-58-005-com-danijelzalac-teslaphoneguardpro.jpg" width="30%" alt="Emergency Wipe"/>
+</p>
+
 ## 🚨 Core Defense Features
 
 ### 1. ☠️ Dead Man's Switch (Inactivity Wipe)
