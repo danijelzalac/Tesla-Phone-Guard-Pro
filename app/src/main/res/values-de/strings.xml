@@ -52,5 +52,5 @@
     <string name="msg_counter_reset">Zähler zurückgesetzt</string>
     <string name="title_emergency_wipe">Notfall-Löschung</string>
     <string name="msg_wipe_confirm">WARNUNG: Werksreset löscht alle Daten unwiderruflich.\n\nHinweis: Android 10+ erfordert Device Owner Rechte.</string>
-    <string name="device_owner_warning">WARNUNG: Ab Android 10+ muss diese App Device Owner sein. ADB Befehl: adb shell dpm set-device-owner com.danijelzalac.teslaphoneguardpro/.AdminReceiver</string>
+    <string name="device_owner_warning">WARNUNG: Ab Android 10+ muss diese App Device Owner sein. ADB Befehl: adb shell dpm set-device-owner com.teslaphoneguardpro/.AdminReceiver</string>
 </resources>

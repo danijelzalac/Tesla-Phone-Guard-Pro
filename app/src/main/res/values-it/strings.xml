@@ -52,5 +52,5 @@
     <string name="msg_counter_reset">Contatore Resettato</string>
     <string name="title_emergency_wipe">Cancellazione Emergenza</string>
     <string name="msg_wipe_confirm">ATTENZIONE: Ripristino fabbrica cancella tutto. Azione irreversibile.\n\nNota: Android 10+ richiede privilegi Device Owner.</string>
-    <string name="device_owner_warning">ATTENZIONE: Su Android 10+ l\'app deve essere Device Owner. Comando ADB: adb shell dpm set-device-owner com.danijelzalac.teslaphoneguardpro/.AdminReceiver</string>
+    <string name="device_owner_warning">ATTENZIONE: Su Android 10+ l\'app deve essere Device Owner. Comando ADB: adb shell dpm set-device-owner com.teslaphoneguardpro/.AdminReceiver</string>
 </resources>

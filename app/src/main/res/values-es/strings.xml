@@ -41,5 +41,5 @@
     <string name="msg_counter_reset">Contador Reiniciado</string>
     <string name="title_emergency_wipe">Borrado Emergencia</string>
     <string name="msg_wipe_confirm">ADVERTENCIA: Restablecimiento de fábrica borra todo. Irreversible.\n\nNota: Android 10+ requiere privilegios Device Owner.</string>
-    <string name="device_owner_warning">ADVERTENCIA: En Android 10+ la app debe ser Device Owner. Comando ADB: adb shell dpm set-device-owner com.danijelzalac.teslaphoneguardpro/.AdminReceiver</string>
+    <string name="device_owner_warning">ADVERTENCIA: En Android 10+ la app debe ser Device Owner. Comando ADB: adb shell dpm set-device-owner com.teslaphoneguardpro/.AdminReceiver</string>
 </resources>

@@ -52,5 +52,5 @@
     <string name="msg_counter_reset">Teller Gereset</string>
     <string name="title_emergency_wipe">Noodwissing</string>
     <string name="msg_wipe_confirm">WAARSCHUWING: Fabrieksreset wist alles. Onomkeerbaar.\n\nLet op: Android 10+ vereist Apparaat-eigenaar rechten.</string>
-    <string name="device_owner_warning">WAARSCHUWING: Op Android 10+ moet app Apparaat-eigenaar zijn. ADB Commando: adb shell dpm set-device-owner com.danijelzalac.teslaphoneguardpro/.AdminReceiver</string>
+    <string name="device_owner_warning">WAARSCHUWING: Op Android 10+ moet app Apparaat-eigenaar zijn. ADB Commando: adb shell dpm set-device-owner com.teslaphoneguardpro/.AdminReceiver</string>
 </resources>

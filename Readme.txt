@@ -24,4 +24,4 @@ For the application to function correctly and have permission to wipe the device
 3.  Connect the device to your PC and run the following command in your terminal:
 
 ```bash
-adb shell dpm set-device-owner com.danijelzalac.teslaphoneguardpro/.AdminReceiver
+adb shell dpm set-device-owner com.teslaphoneguardpro/.AdminReceiver

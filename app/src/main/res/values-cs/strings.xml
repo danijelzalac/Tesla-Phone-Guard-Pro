@@ -52,5 +52,5 @@
     <string name="msg_counter_reset">Počitadlo Resetováno</string>
     <string name="title_emergency_wipe">Nouzové Vymazání</string>
     <string name="msg_wipe_confirm">VAROVÁNÍ: Tovární nastavení vymaže vše. Nevratné.\n\nPoznámka: Android 10+ vyžaduje práva Vlastníka Zařízení.</string>
-    <string name="device_owner_warning">VAROVÁNÍ: Na Android 10+ musí být aplikace Vlastníkem Zařízení. ADB Příkaz: adb shell dpm set-device-owner com.danijelzalac.teslaphoneguardpro/.AdminReceiver</string>
+    <string name="device_owner_warning">VAROVÁNÍ: Na Android 10+ musí být aplikace Vlastníkem Zařízení. ADB Příkaz: adb shell dpm set-device-owner com.teslaphoneguardpro/.AdminReceiver</string>
 </resources>

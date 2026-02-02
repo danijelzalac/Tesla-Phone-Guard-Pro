@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#000000</color>
+    <color name="dark_grey">#121212</color>
+    <color name="gold">#FFD700</color>
+    <color name="gold_dark">#B8860B</color>
+    <color name="gray">#888888</color>
+    <color name="red_warning">#FF4444</color>
+    <color name="white">#FFFFFF</color>
+    <string name="accept_risk">I ACCEPT</string>
+    <string name="admin_description">Required to perform emergency lock and wipe operations, and to monitor security attempts.</string>
+    <string name="admin_label">Tesla Guard Admin</string>
+    <string name="app_name">Tesla Phone Guard Pro</string>
+    <string name="attribution">by Danijel Zalac 2026</string>
+    <string name="battery_opt_button">Disable Battery Optimization</string>
+    <string name="battery_opt_fix_now">Fix Now</string>
+    <string name="battery_opt_later">Later</string>
+    <string name="battery_opt_toast_error">Could not open settings automatically. Please disable battery optimization manually.</string>
+    <string name="battery_opt_warning_msg">For the \'Inactivity Wipe\' feature to work reliably, you MUST disable battery optimization for this app.\n\nOtherwise, the system may kill the timer to save battery, preventing the wipe from happening.</string>
+    <string name="battery_opt_warning_title">Battery Optimization Warning</string>
+    <string name="btn_open_power_settings">Configure Auto Power On</string>
+    <string name="btn_power_on_guide">How to Setup Auto Power On?</string>
+    <string name="config_auto_defense_title">Automatic Defense Configuration</string>
+    <string name="config_inactivity_desc">Wipe data if not unlocked for X hours (0 to disable)</string>
+    <string name="config_inactivity_title">Inactivity Wipe (Dead Man\'s Switch)</string>
+    <string name="config_manual_title">Manual Controls</string>
+    <string name="decline_risk">CANCEL</string>
+    <string name="description_lock">INSTANT LOCKDOWN: Immediately locks the screen and engages security protocols. Use this to quickly secure your device from nearby threats.</string>
+    <string name="description_monitor">ACTIVE SURVEILLANCE: Continuously monitors unlock attempts. If the limit is exceeded, the auto-wipe protocol is engaged.</string>
+    <string name="description_wipe">EMERGENCY DATA DESTRUCTION: Performs a factory reset to permanently erase all data on the device. This is an irreversible last-resort measure for extreme situations.</string>
+    <string name="disable_admin">Disable Device Admin</string>
+    <string name="disclaimer_msg">This app can PERMANENTLY ERASE all data on your device.\n\n1. By enabling these features, you accept full responsibility for any data loss.\n2. The developer is NOT responsible for accidental wipes.\n3. For \'Inactivity Wipe\' to work if the phone is OFF, you MUST schedule \'Auto Power On\' in your phone settings.\n\nDo you accept these risks?</string>
+    <string name="disclaimer_title">Legal Disclaimer &amp; Safety</string>
+    <string name="enable_admin">Enable Device Admin</string>
+    <string name="error_invalid_attempts">Invalid max attempts number</string>
+    <string name="error_invalid_hours">Invalid inactivity hours</string>
+    <string name="error_min_attempts">Minimum 3 attempts required</string>
+    <string name="error_negative_hours">Hours cannot be negative</string>
+    <string name="feature_failed_attempts">Failed Attempts: %1$d / %2$d</string>
+    <string name="language_selector_title">App Language</string>
+    <string name="lock_device">Lock Device Now</string>
+    <string name="msg_counter_reset">Counter Reset</string>
+    <string name="msg_device_locked">Device Locked</string>
+    <string name="msg_enable_admin_first">Please enable Device Admin first</string>
+    <string name="msg_scheduled_power_on">To ensure the \'Dead Man\'s Switch\' works even if your phone is OFF, you must enable \'Scheduled Power On\'.\n\n1. Tap \'Open Settings\' below.\n2. Look for \'Scheduled Power On/Off\' or \'Auto Power On\'.\n3. Set a daily time (e.g., 03:00 AM) for the phone to turn itself on.</string>
+    <string name="msg_wipe_confirm">WARNING: This will factory reset the device and erase all data. This action cannot be undone.\n\nNote: On Android 10+, this requires Device Owner privileges.</string>
+    <string name="reset_counter">Reset Counter</string>
+    <string name="save_settings">Save Configuration</string>
+    <string name="security_features_title">Security Protocols</string>
+    <string name="setting_max_attempts_desc">INTRUSION THRESHOLD: Sets the maximum number of incorrect password attempts.\n\nDURESS PROTOCOL: If forced to unlock, intentionally enter WRONG password this many times to trigger a wipe.</string>
+    <string name="setting_max_attempts_title">Brute Force / Duress Limit</string>
+    <string name="setting_usb_wipe_desc">ANTI-FORENSIC PROTECTION: Automatically triggers a data wipe if a USB data connection is detected while the device is locked. This prevents forensic tools from extracting data.</string>
+    <string name="setting_usb_wipe_title">USB Port Defense</string>
+    <string name="settings_saved">Security Configuration Updated</string>
+    <string name="status_active">System Status: ARMED</string>
+    <string name="status_inactive">System Status: DISARMED</string>
+    <string name="title_emergency_wipe">Emergency Wipe</string>
+    <string name="title_scheduled_power_on">Automated Power On</string>
+    <string name="usb_status_armed">ARMED</string>
+    <string name="usb_status_disarmed">OFF</string>
+    <string name="warning_usb_wipe">WARNING: Charging your phone while locked might trigger a wipe if the charger requests data!</string>
+    <string name="wipe_abort">ABORT / CANCEL</string>
+    <string name="wipe_countdown_msg">Data destruction in: %d seconds</string>
+    <string name="wipe_countdown_title">EMERGENCY WIPE INITIATED</string>
+    <string name="wipe_data">Wipe Data (Emergency)</string>
+    <string name="wipe_now">WIPE NOW</string>
+    <style name="Base.Theme.TeslaPhoneGuardPro" parent="Theme.Material3.DayNight.NoActionBar">
+        
+        <item name="colorPrimary">@color/gold</item>
+        <item name="colorPrimaryVariant">@color/gold_dark</item>
+        <item name="colorOnPrimary">@color/black</item>
+        
+        <item name="android:windowBackground">@color/black</item>
+        <item name="android:textColor">@color/gold</item>
+        
+        
+        <item name="colorControlActivated">@color/gold</item>
+        <item name="android:colorForeground">@color/gold</item>
+    </style>
+    <style name="Theme.TeslaPhoneGuardPro" parent="Base.Theme.TeslaPhoneGuardPro"/>
+</resources>

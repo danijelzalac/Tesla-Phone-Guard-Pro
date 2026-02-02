@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2" xmlns:ns2="http://schemas.android.com/tools">
+    <plurals name="mtrl_badge_content_description">
+    <item quantity="one">%d ново обавештење</item>
+    <item quantity="few">%d нова обавештења</item>
+    <item quantity="other">%d нових обавештења</item>
+  </plurals>
+    <string msgid="5976598919945601918" name="abc_action_bar_home_description">"Идите на почетну"</string>
+    <string msgid="8388173803310557296" name="abc_action_bar_up_description">"Идите нагоре"</string>
+    <string msgid="3937310113216875497" name="abc_action_menu_overflow_description">"Још опција"</string>
+    <string msgid="4692188335987374352" name="abc_action_mode_done">"Готово"</string>
+    <string msgid="1189761859438369441" name="abc_activity_chooser_view_see_all">"Прикажи све"</string>
+    <string msgid="2165779757652331008" name="abc_activitychooserview_choose_application">"Изаберите апликацију"</string>
+    <string msgid="4215997306490295099" name="abc_capital_off">"ИСКЉУЧЕНО"</string>
+    <string msgid="884982626291842264" name="abc_capital_on">"УКЉУЧЕНО"</string>
+    <string msgid="8833365367933412986" name="abc_menu_alt_shortcut_label">"Alt+"</string>
+    <string msgid="2223301931652355242" name="abc_menu_ctrl_shortcut_label">"Ctrl+"</string>
+    <string msgid="838001238306846836" name="abc_menu_delete_shortcut_label">"delete"</string>
+    <string msgid="7986526966204849475" name="abc_menu_enter_shortcut_label">"enter"</string>
+    <string msgid="375214403600139847" name="abc_menu_function_shortcut_label">"Function+"</string>
+    <string msgid="4192209724446364286" name="abc_menu_meta_shortcut_label">"Meta+"</string>
+    <string msgid="4741552369836443843" name="abc_menu_shift_shortcut_label">"Shift+"</string>
+    <string msgid="5473865519181928982" name="abc_menu_space_shortcut_label">"тастер за размак"</string>
+    <string msgid="6180552449598693998" name="abc_menu_sym_shortcut_label">"Sym+"</string>
+    <string msgid="5520303668377388990" name="abc_prepend_shortcut_label">"Menu+"</string>
+    <string msgid="7208076849092622260" name="abc_search_hint">"Претражите…"</string>
+    <string msgid="3741173234950517107" name="abc_searchview_description_clear">"Обришите упит"</string>
+    <string msgid="693312494995508443" name="abc_searchview_description_query">"Претражите упит"</string>
+    <string msgid="3417662926640357176" name="abc_searchview_description_search">"Претражите"</string>
+    <string msgid="1486535517437947103" name="abc_searchview_description_submit">"Пошаљите упит"</string>
+    <string msgid="2293578557972875415" name="abc_searchview_description_voice">"Гласовна претрага"</string>
+    <string msgid="8875138169939072951" name="abc_shareactionprovider_share_with">"Делите помоћу"</string>
+    <string msgid="9055268688411532828" name="abc_shareactionprovider_share_with_application">"Делите помоћу апликације <ns1:g id="APPLICATION_NAME">%s</ns1:g>"</string>
+    <string msgid="1656852541809559762" name="abc_toolbar_collapse_description">"Скупи"</string>
+    <string name="accept_risk">PRIHVATAM</string>
+    <string name="admin_description">Potrebno za hitno zaključavanje, brisanje podataka i praćenje bezbednosnih pokušaja.</string>
+    <string name="admin_label">Tesla Guard Admin</string>
+    <string name="app_name">Tesla Phone Guard Pro</string>
+    <string name="attribution">autor Danijel Zalac 2026</string>
+    <string name="battery_opt_button">Isključi Optimizaciju Baterije</string>
+    <string name="battery_opt_fix_now">Popravi Odmah</string>
+    <string name="battery_opt_later">Kasnije</string>
+    <string name="battery_opt_toast_error">Nije moguće automatski otvoriti podešavanja. Molimo isključite ručno.</string>
+    <string name="battery_opt_warning_msg">Za pouzdan rad "Tajmera Smrti" (Brisanje pri neaktivnosti), MORATE isključiti optimizaciju baterije za ovu aplikaciju. U suprotnom, sistem može ugasiti tajmer.</string>
+    <string name="battery_opt_warning_title">Upozorenje za Bateriju</string>
+    <string name="bottomsheet_action_collapse">Скупите доњу табелу</string>
+    <string name="bottomsheet_action_expand">Проширите доњу табелу</string>
+    <string name="bottomsheet_action_expand_halfway">Проширите до пола</string>
+    <string name="bottomsheet_drag_handle_clicked">Идентификатор за превлачење је двапут додирнут</string>
+    <string name="bottomsheet_drag_handle_content_description">Ручица за превлачење</string>
+    <string name="btn_open_power_settings">Podesi Automatsko Paljenje</string>
+    <string name="btn_power_on_guide">Kako podesiti automatsko paljenje?</string>
+    <string msgid="881409763997275156" name="call_notification_answer_action">"Одговори"</string>
+    <string msgid="8793775615905189152" name="call_notification_answer_video_action">"Видео"</string>
+    <string msgid="3229508546291798546" name="call_notification_decline_action">"Одбиј"</string>
+    <string msgid="2659457946726154263" name="call_notification_hang_up_action">"Прекини везу"</string>
+    <string msgid="6107532579223922871" name="call_notification_incoming_text">"Долазни позив"</string>
+    <string msgid="8623827134497363134" name="call_notification_ongoing_text">"Позив је у току"</string>
+    <string msgid="59049573811482460" name="call_notification_screening_text">"Проверава се долазни позив"</string>
+    <string name="character_counter_content_description">Унети знакови: %1$d од %2$d</string>
+    <string name="character_counter_overflowed_content_description">Прекорачено је ограничење броја знакова: %1$d од %2$d</string>
+    <string name="clear_text_end_icon_content_description">Обриши текст</string>
+    <string name="config_auto_defense_title">Automatska Odbrana</string>
+    <string name="config_inactivity_desc">Obriši ako se ne otključa X sati (0 za isključeno)</string>
+    <string name="config_inactivity_title">Tajmer Smrti (Brisanje pri neaktivnosti)</string>
+    <string name="config_manual_title">Ručne Kontrole</string>
+    <string name="decline_risk">ODUSTANI</string>
+    <string name="description_lock">TRENUTNO ZAKLJUČAVANJE: Zaključava ekran i aktivira protokole. Koristite za brzo osiguravanje uređaja.</string>
+    <string name="description_monitor">AKTIVNI NADZOR: Prati neuspešna otključavanja. Prekoračenje limita pokreće automatsko brisanje.</string>
+    <string name="description_wipe">HITNO UNIŠTAVANJE: Fabričko resetovanje koje trajno briše SVE podatke. Ova akcija je nepovratna.</string>
+    <string name="device_owner_warning">UPOZORENJE: Na Android 10+ verzijama, ova aplikacija mora biti postavljena kao "Device Owner" putem ADB-a da bi mogla da briše podatke.</string>
+    <string name="disable_admin">Deaktiviraj Zaštitu</string>
+    <string name="disclaimer_msg">Ova aplikacija može TRAJNO OBRISATI sve podatke sa vašeg uređaja.\n\n1. Korišćenjem prihvatate punu odgovornost za gubitak podataka.\n2. Autor NIJE odgovoran za slučajno brisanje.\n3. Da bi "Tajmer Smrti" radio i kada je telefon UGAŠEN, morate podesiti "Automatsko uključivanje" u podešavanjima telefona.\n\nDa li prihvatate rizik?</string>
+    <string name="disclaimer_title">Pravno Odricanje i Bezbednost</string>
+    <string name="enable_admin">Aktiviraj Zaštitu</string>
+    <string name="error_icon_content_description">Грешка</string>
+    <string name="error_invalid_attempts">Nevažeći broj</string>
+    <string name="error_invalid_hours">Nevažeći broj sati</string>
+    <string name="error_min_attempts">Minimum 3 pokušaja</string>
+    <string name="error_negative_hours">Sati ne mogu biti negativni</string>
+    <string name="exposed_dropdown_menu_content_description">Прикажи падајући мени</string>
+    <string name="feature_failed_attempts">Neuspešni Pokušaji: %1$d / %2$d</string>
+    <string name="icon_content_description">Икона дијалога</string>
+    <string name="item_view_role_description">Картица</string>
+    <string name="language_selector_title">Jezik Aplikacije</string>
+    <string name="lock_device">Zaključaj Odmah</string>
+    <string name="material_clock_toggle_content_description">Изаберите пре подне или по подне</string>
+    <string name="material_hour_24h_suffix">%1$s с</string>
+    <string name="material_hour_selection">Изаберите сат</string>
+    <string name="material_hour_suffix">%1$s с</string>
+    <string name="material_minute_selection">Изаберите минуте</string>
+    <string name="material_minute_suffix">%1$s мин</string>
+    <string name="material_timepicker_am">AM</string>
+    <string name="material_timepicker_clock_mode_description">Пређите у режим сата ради уноса времена.</string>
+    <string name="material_timepicker_hour">Сат</string>
+    <string name="material_timepicker_minute">Минут</string>
+    <string name="material_timepicker_pm">PM</string>
+    <string name="material_timepicker_select_time">Изаберите време</string>
+    <string name="material_timepicker_text_input_mode_description">Пређите у режим уноса текста ради уноса времена.</string>
+    <string name="msg_counter_reset">Brojač je resetovan</string>
+    <string name="msg_device_locked">Uređaj je zaključan</string>
+    <string name="msg_enable_admin_first">Prvo morate aktivirati zaštitu (Admin)</string>
+    <string name="msg_scheduled_power_on">Da bi "Tajmer Smrti" radio čak i ako se telefon ugasi ili mu se isprazni baterija, morate podesiti da se telefon sam uključi.\n\n1. Kliknite na dugme ispod.\n2. Nađite opciju "Planirano uključivanje/isključivanje".
+3. Podesite da se telefon pali svaki dan (npr. u 03:00 ujutru).</string>
+    <string name="msg_wipe_confirm">PAŽNJA: Ovo će trajno obrisati SVE podatke sa telefona. Nema povratka.\n\nNapomena: Na Android 10+ potrebna su "Device Owner" prava.</string>
+    <string name="mtrl_badge_numberless_content_description">Ново обавештење</string>
+    <string name="mtrl_chip_close_icon_content_description">Уклоните %1$s</string>
+    <string name="mtrl_exceed_max_badge_number_content_description" ns2:ignore="PluralsCandidate">Нових обавештења: више од %1$d</string>
+    <string name="mtrl_picker_a11y_next_month">Пређите на следећи месец</string>
+    <string name="mtrl_picker_a11y_prev_month">Пређите на претходни месец</string>
+    <string name="mtrl_picker_announce_current_range_selection">Избор датума почетка: %1$s – Избор датума завршетка: %2$s</string>
+    <string name="mtrl_picker_announce_current_selection">Актуелни избор: %1$s</string>
+    <string name="mtrl_picker_announce_current_selection_none">ништа</string>
+    <string name="mtrl_picker_cancel">Откажи</string>
+    <string name="mtrl_picker_confirm">Потврди</string>
+    <string name="mtrl_picker_date_header_selected">%1$s</string>
+    <string name="mtrl_picker_date_header_title">Изаберите датум</string>
+    <string name="mtrl_picker_date_header_unselected">Изабрани датум</string>
+    <string name="mtrl_picker_day_of_week_column_header">Колона са данима: %1$s</string>
+    <string name="mtrl_picker_end_date_description">Датум завршетка %1$s</string>
+    <string name="mtrl_picker_invalid_format">Формат је неважећи.</string>
+    <string name="mtrl_picker_invalid_format_example">Пример: %1$s</string>
+    <string name="mtrl_picker_invalid_format_use">Користите: %1$s</string>
+    <string name="mtrl_picker_invalid_range">Неважећи период.</string>
+    <string name="mtrl_picker_navigate_to_current_year_description">Идите на актуелну годину %1$d</string>
+    <string name="mtrl_picker_navigate_to_year_description">Идите на годину %1$d</string>
+    <string name="mtrl_picker_out_of_range">Изван периода: %1$s</string>
+    <string name="mtrl_picker_range_header_only_end_selected">Датум почетка – %1$s</string>
+    <string name="mtrl_picker_range_header_only_start_selected">%1$s – Датум завршетка</string>
+    <string name="mtrl_picker_range_header_selected">%1$s–%2$s</string>
+    <string name="mtrl_picker_range_header_title">Изаберите период</string>
+    <string name="mtrl_picker_range_header_unselected">Датум почетка – Датум завршетка</string>
+    <string name="mtrl_picker_save">Сачувај</string>
+    <string name="mtrl_picker_start_date_description">Датум почетка %1$s</string>
+    <string name="mtrl_picker_text_input_date_hint">Датум</string>
+    <string name="mtrl_picker_text_input_date_range_end_hint">Датум завршетка</string>
+    <string name="mtrl_picker_text_input_date_range_start_hint">Датум почетка</string>
+    <string name="mtrl_picker_text_input_day_abbr">д</string>
+    <string name="mtrl_picker_text_input_month_abbr">м</string>
+    <string name="mtrl_picker_text_input_year_abbr">г</string>
+    <string name="mtrl_picker_today_description">Данас %1$s</string>
+    <string name="mtrl_picker_toggle_to_calendar_input_mode">Пређите на режим уноса у Календару</string>
+    <string name="mtrl_picker_toggle_to_day_selection">Додирните да бисте прешли на приказ календара</string>
+    <string name="mtrl_picker_toggle_to_text_input_mode">Пређите на режим уноса текста</string>
+    <string name="mtrl_picker_toggle_to_year_selection">Додирните да бисте прешли на приказ године</string>
+    <string name="mtrl_timepicker_cancel">Откажи</string>
+    <string name="mtrl_timepicker_confirm">Потврди</string>
+    <string name="password_toggle_content_description">Прикажи лозинку</string>
+    <string name="reset_counter">Resetuj Brojač</string>
+    <string name="save_settings">Sačuvaj Podešavanja</string>
+    <string msgid="6264217191555673260" name="search_menu_title">"Претражите"</string>
+    <string name="security_features_title">Bezbednosni Protokoli</string>
+    <string name="setting_max_attempts_desc">GRANICA UPADA: Maksimalan broj pogrešnih lozinki.\n\nPRISILNI PROTOKOL: Ako ste prisiljeni da otključate telefon, namerno unesite POGREŠNU šifru onoliko puta koliko je ovde podešeno da bi se telefon obrisao.</string>
+    <string name="setting_max_attempts_title">Limit Pokušaja / Prisilni Kod</string>
+    <string name="setting_usb_wipe_desc">Odbrana od "Cellebrite" uređaja: Ako se detektuje USB prenos podataka dok je telefon zaključan, automatski se pokreće brisanje.</string>
+    <string name="setting_usb_wipe_title">USB Zaštita (Anti-Forenzika)</string>
+    <string name="settings_saved">Podešavanja su sačuvana</string>
+    <string name="status_active">Status: AKTIVIRANO</string>
+    <string msgid="6277540029070332960" name="status_bar_notification_info_overflow">"999+"</string>
+    <string name="status_inactive">Status: DEAKTIVIRANO</string>
+    <string name="title_emergency_wipe">HITNO BRISANJE</string>
+    <string name="title_scheduled_power_on">Automatsko Uključivanje</string>
+    <string name="usb_status_armed">AKTIVNO</string>
+    <string name="usb_status_disarmed">ISKLJUČENO</string>
+    <string name="warning_usb_wipe">UPOZORENJE: Punjenje na javnim mestima može aktivirati brisanje ako punjač pokuša da pristupi podacima!</string>
+    <string name="wipe_abort">ODGODI / PREKINI</string>
+    <string name="wipe_countdown_msg">Uništavanje podataka za: %d sekundi</string>
+    <string name="wipe_countdown_title">HITNO BRISANJE POKRENUTO</string>
+    <string name="wipe_data">UNIŠTI PODATKE (HITNO)</string>
+    <string name="wipe_now">UNIŠTI ODMAH</string>
+</resources>

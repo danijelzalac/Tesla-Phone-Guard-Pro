@@ -52,5 +52,5 @@
     <string name="msg_counter_reset">Compteur Réinitialisé</string>
     <string name="title_emergency_wipe">Effacement Urgence</string>
     <string name="msg_wipe_confirm">ATTENTION: Réinitialisation d\'usine, efface tout. Irréversible.\n\nNote: Android 10+ requiert droits Propriétaire Appareil.</string>
-    <string name="device_owner_warning">ATTENTION: Sur Android 10+, l\'appli doit être Propriétaire Appareil. Commande ADB: adb shell dpm set-device-owner com.danijelzalac.teslaphoneguardpro/.AdminReceiver</string>
+    <string name="device_owner_warning">ATTENTION: Sur Android 10+, l\'appli doit être Propriétaire Appareil. Commande ADB: adb shell dpm set-device-owner com.teslaphoneguardpro/.AdminReceiver</string>
 </resources>

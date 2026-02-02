@@ -52,5 +52,5 @@
     <string name="msg_counter_reset">Räknare Återställd</string>
     <string name="title_emergency_wipe">Nödradering</string>
     <string name="msg_wipe_confirm">VARNING: Fabriksåterställning raderar allt. Oåterkalleligt.\n\nObs: Android 10+ kräver Device Owner-rättigheter.</string>
-    <string name="device_owner_warning">VARNING: På Android 10+ måste appen vara Device Owner. ADB Kommando: adb shell dpm set-device-owner com.danijelzalac.teslaphoneguardpro/.AdminReceiver</string>
+    <string name="device_owner_warning">VARNING: På Android 10+ måste appen vara Device Owner. ADB Kommando: adb shell dpm set-device-owner com.teslaphoneguardpro/.AdminReceiver</string>
 </resources>

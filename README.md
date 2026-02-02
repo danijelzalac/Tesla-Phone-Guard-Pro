@@ -45,7 +45,7 @@ Prevents data extraction via USB cables (Cellebrite, GrayKey, etc.).
 2.  **Grant Device Owner Rights**:
     You must use ADB (Android Debug Bridge) to grant this permission. Connect your phone to a PC and run:
     ```bash
-    adb shell dpm set-device-owner com.danijelzalac.teslaphoneguardpro/.AdminReceiver
+    adb shell dpm set-device-owner com.teslaphoneguardpro/.AdminReceiver
     ```
 3.  **Open the App**:
     *   **Enable Admin**: Tap "Enable Device Admin".

@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "com.teslaphoneguardpro.app-mergeDebugResources-31:/layout/activity_main.xml",
+        "source": "com.teslaphoneguardpro.app-main-34:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.teslaphoneguardpro.app-mergeDebugResources-31:/layout/dialog_wipe_countdown.xml",
+        "source": "com.teslaphoneguardpro.app-main-34:/layout/dialog_wipe_countdown.xml"
+    }
+]

@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace 'com.danijelzalac.teslaphoneguardpro'
+    namespace 'com.teslaphoneguardpro'
     compileSdk 34
 
     defaultConfig {
-        applicationId "com.danijelzalac.teslaphoneguardpro"
+        applicationId "com.teslaphoneguardpro"
         minSdk 26
         targetSdk 34
         versionCode 1

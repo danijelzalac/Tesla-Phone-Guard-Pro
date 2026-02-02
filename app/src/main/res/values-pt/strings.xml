@@ -52,5 +52,5 @@
     <string name="msg_counter_reset">Contador Redefinido</string>
     <string name="title_emergency_wipe">Limpeza de Emergência</string>
     <string name="msg_wipe_confirm">AVISO: Redefinição de fábrica apaga tudo. Irreversível.\n\nNota: Android 10+ requer privilégios Device Owner.</string>
-    <string name="device_owner_warning">AVISO: No Android 10+ o app deve ser Device Owner. Comando ADB: adb shell dpm set-device-owner com.danijelzalac.teslaphoneguardpro/.AdminReceiver</string>
+    <string name="device_owner_warning">AVISO: No Android 10+ o app deve ser Device Owner. Comando ADB: adb shell dpm set-device-owner com.teslaphoneguardpro/.AdminReceiver</string>
 </resources>

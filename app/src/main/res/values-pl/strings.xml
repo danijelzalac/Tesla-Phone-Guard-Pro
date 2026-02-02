@@ -52,5 +52,5 @@
     <string name="msg_counter_reset">Licznik Zresetowany</string>
     <string name="title_emergency_wipe">Awaryjne Czyszczenie</string>
     <string name="msg_wipe_confirm">OSTRZEŻENIE: Reset fabryczny usuwa wszystko. Nieodwracalne.\n\nUwaga: Android 10+ wymaga uprawnień Właściciela Urządzenia.</string>
-    <string name="device_owner_warning">OSTRZEŻENIE: Na Android 10+ aplikacja musi być Właścicielem Urządzenia. Komenda ADB: adb shell dpm set-device-owner com.danijelzalac.teslaphoneguardpro/.AdminReceiver</string>
+    <string name="device_owner_warning">OSTRZEŻENIE: Na Android 10+ aplikacja musi być Właścicielem Urządzenia. Komenda ADB: adb shell dpm set-device-owner com.teslaphoneguardpro/.AdminReceiver</string>
 </resources>

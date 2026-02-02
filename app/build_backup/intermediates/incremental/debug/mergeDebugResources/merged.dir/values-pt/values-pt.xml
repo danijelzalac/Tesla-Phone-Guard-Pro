@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+    <string msgid="5976598919945601918" name="abc_action_bar_home_description">"Navegar para a página inicial"</string>
+    <string msgid="8388173803310557296" name="abc_action_bar_up_description">"Navegar para cima"</string>
+    <string msgid="3937310113216875497" name="abc_action_menu_overflow_description">"Mais opções"</string>
+    <string msgid="4692188335987374352" name="abc_action_mode_done">"Concluído"</string>
+    <string msgid="1189761859438369441" name="abc_activity_chooser_view_see_all">"Ver tudo"</string>
+    <string msgid="2165779757652331008" name="abc_activitychooserview_choose_application">"Selecionar um app"</string>
+    <string msgid="4215997306490295099" name="abc_capital_off">"DESATIVADO"</string>
+    <string msgid="884982626291842264" name="abc_capital_on">"ATIVADO"</string>
+    <string msgid="8833365367933412986" name="abc_menu_alt_shortcut_label">"Alt+"</string>
+    <string msgid="2223301931652355242" name="abc_menu_ctrl_shortcut_label">"Ctrl+"</string>
+    <string msgid="838001238306846836" name="abc_menu_delete_shortcut_label">"delete"</string>
+    <string msgid="7986526966204849475" name="abc_menu_enter_shortcut_label">"enter"</string>
+    <string msgid="375214403600139847" name="abc_menu_function_shortcut_label">"Function+"</string>
+    <string msgid="4192209724446364286" name="abc_menu_meta_shortcut_label">"Meta+"</string>
+    <string msgid="4741552369836443843" name="abc_menu_shift_shortcut_label">"Shift+"</string>
+    <string msgid="5473865519181928982" name="abc_menu_space_shortcut_label">"espaço"</string>
+    <string msgid="6180552449598693998" name="abc_menu_sym_shortcut_label">"Sym+"</string>
+    <string msgid="5520303668377388990" name="abc_prepend_shortcut_label">"Menu+"</string>
+    <string msgid="7208076849092622260" name="abc_search_hint">"Pesquisar…"</string>
+    <string msgid="3741173234950517107" name="abc_searchview_description_clear">"Limpar consulta"</string>
+    <string msgid="693312494995508443" name="abc_searchview_description_query">"Consulta de pesquisa"</string>
+    <string msgid="3417662926640357176" name="abc_searchview_description_search">"Pesquisar"</string>
+    <string msgid="1486535517437947103" name="abc_searchview_description_submit">"Enviar consulta"</string>
+    <string msgid="2293578557972875415" name="abc_searchview_description_voice">"Pesquisa por voz"</string>
+    <string msgid="8875138169939072951" name="abc_shareactionprovider_share_with">"Compartilhar com"</string>
+    <string msgid="9055268688411532828" name="abc_shareactionprovider_share_with_application">"Compartilhar com <ns1:g id="APPLICATION_NAME">%s</ns1:g>"</string>
+    <string msgid="1656852541809559762" name="abc_toolbar_collapse_description">"Recolher"</string>
+    <string name="accept_risk">ACEITO</string>
+    <string name="admin_description">Necessário para bloqueio de emergência, limpeza de dados e monitoramento de segurança.</string>
+    <string name="admin_label">Tesla Guard Admin</string>
+    <string name="app_name">Tesla Phone Guard Pro</string>
+    <string name="attribution">por Danijel Zalac 2026</string>
+    <string name="battery_opt_button">Desativar Otim. Bateria</string>
+    <string name="battery_opt_fix_now">Corrigir</string>
+    <string name="battery_opt_later">Depois</string>
+    <string name="battery_opt_toast_error">Não foi possível abrir configurações. Desative manualmente.</string>
+    <string name="battery_opt_warning_msg">Para \'Limpeza por Inatividade\' funcionar, VOCÊ DEVE desativar otimização de bateria para este app.</string>
+    <string name="battery_opt_warning_title">Aviso Otim. Bateria</string>
+    <string msgid="881409763997275156" name="call_notification_answer_action">"Atender"</string>
+    <string msgid="8793775615905189152" name="call_notification_answer_video_action">"Vídeo"</string>
+    <string msgid="3229508546291798546" name="call_notification_decline_action">"Recusar"</string>
+    <string msgid="2659457946726154263" name="call_notification_hang_up_action">"Desligar"</string>
+    <string msgid="6107532579223922871" name="call_notification_incoming_text">"Chamada recebida"</string>
+    <string msgid="8623827134497363134" name="call_notification_ongoing_text">"Chamada em andamento"</string>
+    <string msgid="59049573811482460" name="call_notification_screening_text">"Filtrando uma ligação recebida"</string>
+    <string name="decline_risk">CANCELAR</string>
+    <string name="description_lock">BLOQUEIO IMEDIATO: Bloqueia a tela e ativa protocolos. Protege rapidamente seu dispositivo.</string>
+    <string name="description_monitor">VIGILÂNCIA ATIVA: Monitora tentativas de desbloqueio. Se exceder o limite, ativa limpeza auto.</string>
+    <string name="description_wipe">DESTRUIÇÃO DE DADOS: Redefinição de fábrica para apagar tudo permanentemente. Irreversível.</string>
+    <string name="device_owner_warning">AVISO: No Android 10+ o app deve ser Device Owner. Comando ADB: adb shell dpm set-device-owner com.teslaphoneguardpro/.AdminReceiver</string>
+    <string name="disable_admin">Desativar Admin do Dispositivo</string>
+    <string name="disclaimer_msg">Este aplicativo pode APAGAR PERMANENTEMENTE todos os dados.\n\n1. Você aceita total responsabilidade por perda de dados.\n2. O desenvolvedor NÃO é responsável por apagamentos acidentais.\n3. Para funcionar com telefone DESLIGADO, você DEVE agendar \'Ligação Auto\' nas configurações.\n\nAceita estes riscos?</string>
+    <string name="disclaimer_title">Aviso Legal &amp; Segurança</string>
+    <string name="enable_admin">Ativar Admin do Dispositivo</string>
+    <string name="error_invalid_attempts">Número inválido</string>
+    <string name="error_invalid_hours">Horas inatividade inválidas</string>
+    <string name="error_min_attempts">Min 3 tentativas necessárias</string>
+    <string name="error_negative_hours">Horas não podem ser negativas</string>
+    <string name="feature_failed_attempts">Tentativas Falhas: %1$d / %2$d</string>
+    <string name="lock_device">Bloquear Agora</string>
+    <string name="msg_counter_reset">Contador Redefinido</string>
+    <string name="msg_device_locked">Dispositivo Bloqueado</string>
+    <string name="msg_enable_admin_first">Ative Admin do Dispositivo primeiro</string>
+    <string name="msg_wipe_confirm">AVISO: Redefinição de fábrica apaga tudo. Irreversível.\n\nNota: Android 10+ requer privilégios Device Owner.</string>
+    <string name="reset_counter">Redefinir Contador</string>
+    <string name="save_settings">Salvar Configuração</string>
+    <string msgid="6264217191555673260" name="search_menu_title">"Pesquisar"</string>
+    <string name="security_features_title">Protocolos de Segurança</string>
+    <string name="setting_max_attempts_desc">LIMIAR DE INTRUSÃO: Máx tentativas de senha incorretas antes da autodestruição.</string>
+    <string name="setting_max_attempts_title">Limite Força Bruta</string>
+    <string name="setting_usb_wipe_desc">ANTI-FORENSE: Ativa limpeza se detectar conexão de dados USB com dispositivo bloqueado.</string>
+    <string name="setting_usb_wipe_title">Defesa Porta USB</string>
+    <string name="settings_saved">Configuração Atualizada</string>
+    <string name="status_active">Estado do Sistema: ARMADO</string>
+    <string msgid="6277540029070332960" name="status_bar_notification_info_overflow">"999+"</string>
+    <string name="status_inactive">Estado do Sistema: DESARMADO</string>
+    <string name="title_emergency_wipe">Limpeza de Emergência</string>
+    <string name="warning_usb_wipe">AVISO: Carregar telefone bloqueado pode ativar limpeza se carregador pedir dados!</string>
+    <string name="wipe_data">Apagar Dados (Emergência)</string>
+</resources>

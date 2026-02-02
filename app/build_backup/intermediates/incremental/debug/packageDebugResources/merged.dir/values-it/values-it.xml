@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="accept_risk">ACCETTO</string>
+    <string name="admin_description">Richiesto per blocco emergenza, cancellazione dati e monitoraggio tentativi sicurezza.</string>
+    <string name="admin_label">Tesla Guard Admin</string>
+    <string name="app_name">Tesla Phone Guard Pro</string>
+    <string name="attribution">di Danijel Zalac 2026</string>
+    <string name="battery_opt_button">Disabilita Ottim. Batteria</string>
+    <string name="battery_opt_fix_now">Correggi</string>
+    <string name="battery_opt_later">Dopo</string>
+    <string name="battery_opt_toast_error">Impossibile aprire impostazioni. Disabilita manualmente.</string>
+    <string name="battery_opt_warning_msg">Per \'Wipe Inattività\' affidabile, DEVI disabilitare ottimizzazione batteria per questa app, altrimenti il sistema ferma il timer.</string>
+    <string name="battery_opt_warning_title">Avviso Ottim. Batteria</string>
+    <string name="decline_risk">ANNULLA</string>
+    <string name="description_lock">BLOCCO IMMEDIATO: Blocca schermo e attiva protocolli. Protegge rapidamente da minacce vicine.</string>
+    <string name="description_monitor">SORVEGLIANZA ATTIVA: Monitora tentativi sblocco. Se limite superato, attiva cancellazione auto.</string>
+    <string name="description_wipe">DISTRUZIONE DATI: Ripristino fabbrica per cancellare tutto permanentemente. Irreversibile.</string>
+    <string name="device_owner_warning">ATTENZIONE: Su Android 10+ l\'app deve essere Device Owner. Comando ADB: adb shell dpm set-device-owner com.teslaphoneguardpro/.AdminReceiver</string>
+    <string name="disable_admin">Disattiva Ammin. Dispositivo</string>
+    <string name="disclaimer_msg">Questa app può CANCELLARE PERMANENTEMENTE tutti i dati.\n\n1. Accetti la piena responsabilità per la perdita di dati.\n2. Lo sviluppatore NON è responsabile per cancellazioni accidentali.\n3. Perchè funzioni a telefono SPENTO, DEVI programmare \'Accensione Auto\' nelle impostazioni.\n\nAccetti questi rischi?</string>
+    <string name="disclaimer_title">Disclaimer Legale &amp; Sicurezza</string>
+    <string name="enable_admin">Attiva Ammin. Dispositivo</string>
+    <string name="error_invalid_attempts">Numero non valido</string>
+    <string name="error_invalid_hours">Ore inattività non valide</string>
+    <string name="error_min_attempts">Min 3 tentativi richiesti</string>
+    <string name="error_negative_hours">Ore non possono essere negative</string>
+    <string name="feature_failed_attempts">Tentativi Falliti: %1$d / %2$d</string>
+    <string name="lock_device">Blocca Ora</string>
+    <string name="msg_counter_reset">Contatore Resettato</string>
+    <string name="msg_device_locked">Dispositivo Bloccato</string>
+    <string name="msg_enable_admin_first">Attiva prima Ammin. Dispositivo</string>
+    <string name="msg_wipe_confirm">ATTENZIONE: Ripristino fabbrica cancella tutto. Azione irreversibile.\n\nNota: Android 10+ richiede privilegi Device Owner.</string>
+    <string name="reset_counter">Resetta Contatore</string>
+    <string name="save_settings">Salva Configurazione</string>
+    <string name="security_features_title">Protocolli di Sicurezza</string>
+    <string name="setting_max_attempts_desc">SOGLIA INTRUSIONE: Max tentativi password errati prima dell\'autodistruzione (wipe).</string>
+    <string name="setting_max_attempts_title">Limite Forza Bruta</string>
+    <string name="setting_usb_wipe_desc">ANTI-FORENSE: Attiva cancellazione se rilevata connessione dati USB a dispositivo bloccato.</string>
+    <string name="setting_usb_wipe_title">Difesa Porta USB</string>
+    <string name="settings_saved">Configurazione Aggiornata</string>
+    <string name="status_active">Stato Sistema: ARMATO</string>
+    <string name="status_inactive">Stato Sistema: DISARMATO</string>
+    <string name="title_emergency_wipe">Cancellazione Emergenza</string>
+    <string name="warning_usb_wipe">ATTENZIONE: Caricare il telefono bloccato può attivare il wipe se il caricatore richiede dati!</string>
+    <string name="wipe_data">Cancella Dati (Emergenza)</string>
+</resources>
